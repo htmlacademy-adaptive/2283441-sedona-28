@@ -1,7 +1,7 @@
-# Личный проект «Седона» 
+# Личный проект «Седона»
 
-* Студент: [Виктория Орлова](https://up.htmlacademy.ru/adaptive/28/user/2283441).
-* Наставник: `Неизвестно`.
+- Студент: [Виктория Орлова](https://up.htmlacademy.ru/adaptive/28/user/2283441).
+- Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim) .
 
 ---
 
