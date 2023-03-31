@@ -2,56 +2,132 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="temporarily.css" />
     <title>HTML Academy: Седона</title>
     <base href="https://htmlacademy-adaptive.github.io/2283441-sedona-28/2/">
 </head>
-  <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" href="index.html" src="" width="" height="" alt="Отель Седона." />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item">
-              <a href="index.html"> Главная </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html"> фото и видео </a>
-            </li>
-            <li class="site-list__item--active">
-              <a> форма отзыва </a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru" target="_blank"> HTML Academy </a>
-            </li>
-          </ul>
+
+  <div class="container">
+    <body class="page__body">
+      <header class="main-header">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" href="index.html" src="" width="" height="" alt="Логотип Седона." />
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html"> Главная </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html"> фото и видео </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a> форма отзыва </a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru" target="_blank"> HTML Academy </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main-form">
+        <section class="hello">
+          <img class="sedona-logo--form" src="" width="" height="" alt="Седона." />
+          <h2 class="form-title">Оставьте свой отзыв</h2>
+          <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+
+        <form class="form" method="post" action="#">
+          <fieldset class="form__you you">
+            <h2 class="form-title">Представьтесь:</h2>
+            <label class="you__label" for="name">ИМЯ*:</label>
+            <input class="you__input" type="text" name="name" />
+            <label class="you__label" for="surname">ФАМИЛИЯ*:</label>
+            <input class="you__input" type="text" name="surname" />
+            <label class="you__label" for="patronymic">Отчество:</label>
+            <input class="you__input" type="text" name="patronymic" />
+          </fieldset>
+
+          <fieldset class="form__info info">
+            <h2 class="form-title">Контактная информация:</h2>
+            <label class="info__label" for="tel">Контактный телефон*:</label>
+            <input class="info__input" type="tel" name="tel" placeholder="Введите телефон" />
+            <label class="info__label" for="email">Электронная почта*:</label>
+            <input class="info__input" type="email" name="email" placeholder="Введите e-mail" />
+          </fieldset>
+
+          <fieldset class="form__impression impression">
+            <h2 class="form-title">Ваше Общее Впечатление:</h2>
+            <label class="impression__label">
+              <input class="impression__input" type="radio" value="Скорее положительное" checked />
+              Скорее положительное
+            </label>
+            <label class="impression__label">
+              <input class="impression__input" type="radio" value="Скорее отрицательное" />
+              Скорее отрицательное
+            </label>
+            <label class="impression__label">
+              <input class="impression__input" type="radio" value="Затрудняюсь ответить" />
+              Затрудняюсь ответить
+            </label>
+          </fieldset>
+
+          <fieldset class="attractions form__attractions">
+            <h2 class="form-title">посещенные достопримечательности:</h2>
+            <label class="attractions__label">
+              <input class="attractions__input" type="checkbox" value="Мост Дьявола" checked />
+              Мост Дьявола
+            </label>
+            <label class="attractions__label">
+              <input class="attractions__input" type="checkbox" value="Гора-Колокол" checked />
+              Гора-Колокол
+            </label>
+            <label class="attractions__label">
+              <input class="attractions__input" type="checkbox" value="Слайд-парк" checked />
+              Слайд-парк
+            </label>
+            <label class="attractions__label">
+              <input class="attractions__input" type="checkbox" value="Красные скалы" />
+              Красные скалы
+            </label>
+          </fieldset>
+
+          <section class="emotions">
+            <h2 class="form-title">Опишите свои эмоции:</h2>
+            <textarea name="comment" rows="10" cols="25">Опишите подробно все свои восторги</textarea>
+          </section>
+
+          <section class="review">
+            <button class="form__button" type="submit">отправить отзыв</button>
+            <p>* — обязательные поля</p>
+          </section>
+        </form>
+      </main>
+
+      <footer class="main-footer">
+        <img class="footer__hashtag" src="" width="" height="" alt="хэштег visitSEDONA." />
+
+        <div class="main-footer__social">
+          <a class="social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+          <a class="social__link--telegram" href="https://t.me/htmlacademy" target="_blank">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+          <a class="social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
         </div>
-      </nav>
-    </header>
 
-    <main class="main-container"></main>
-
-    <footer class="main-footer">
-      <img class="footer__hashtag" src="" width="" height="" alt="хэштег visitSEDONA." />
-
-      <div class="main-footer__social">
-        <a class="social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
-          <span class="visually-hidden">ВКонтакте</span>
+        <a class="main-footer__copyright academy" href="https://htmlacademy.ru/" target="_blank">
+          <p class="copyright__text">разработано</p>
+          <span class="visually-hidden">HTMLacademy</span>
         </a>
-        <a class="social__link--telegram" href="https://t.me/htmlacademy" target="_blank">
-          <span class="visually-hidden">Телеграмм</span>
-        </a>
-        <a class="social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-          <span class="visually-hidden">Ютуб</span>
-        </a>
-      </div>
-
-      <a class="main-footer__copyright academy" href="https://htmlacademy.ru/" target="_blank">
-        <p class="copyright__text">разработано</p>
-        <span class="visually-hidden">HTMLacademy</span>
-      </a>
-    </footer>
-  </body>
+      </footer>
+    </body>
+  </div>
 </html>
