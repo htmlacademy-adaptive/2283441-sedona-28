@@ -35,15 +35,15 @@
       </header>
 
       <main class="main-form">
-        <section class="hello">
+        <section class="form__hello">
           <img class="sedona-logo__form background" src="/source/images/sedona.png" width="230" height="40" alt="Седона." />
-          <h2 class="form-title">Оставьте свой отзыв</h2>
+          <h2 class="form__title">Оставьте свой отзыв</h2>
           <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
 
         <form class="form" method="post" action="#">
           <fieldset class="form__you you">
-            <h2 class="form-title">Представьтесь:</h2>
+            <h2 class="form__title">Представьтесь:</h2>
             <label class="you__label" for="name">ИМЯ*:</label>
             <input class="you__input" type="text" name="name" />
             <label class="you__label" for="surname">ФАМИЛИЯ*:</label>
@@ -53,7 +53,7 @@
           </fieldset>
 
           <fieldset class="form__info info">
-            <h2 class="form-title">Контактная информация:</h2>
+            <h2 class="form__title">Контактная информация:</h2>
             <label class="info__label" for="tel">Контактный телефон*:</label>
             <input class="info__input" type="tel" name="tel" placeholder="Введите телефон" />
             <label class="info__label" for="email">Электронная почта*:</label>
@@ -61,7 +61,7 @@
           </fieldset>
 
           <fieldset class="form__impression impression">
-            <h2 class="form-title">Ваше Общее Впечатление:</h2>
+            <h2 class="form__title">Ваше Общее Впечатление:</h2>
             <label class="impression__label">
               <input class="impression__input" type="radio" value="Скорее положительное" checked />
               Скорее положительное
@@ -77,7 +77,7 @@
           </fieldset>
 
           <fieldset class="form__attractions attractions">
-            <h2 class="form-title">посещенные достопримечательности:</h2>
+            <h2 class="form__title">посещенные достопримечательности:</h2>
             <label class="attractions__label">
               <input class="attractions__input" type="checkbox" value="Мост Дьявола" checked />
               Мост Дьявола
@@ -97,7 +97,7 @@
           </fieldset>
 
           <fieldset class="form__emotions">
-            <h2 class="form-title">Опишите свои эмоции:</h2>
+            <h2 class="form__title">Опишите свои эмоции:</h2>
             <textarea name="comment" rows="10" cols="25">Опишите подробно все свои восторги</textarea>
           </fieldset>
 
@@ -105,6 +105,18 @@
             <button class="form__button" type="submit">отправить отзыв</button>
             <p class="button__field">* — обязательные поля</p>
           </section>
+
+          <!--окна отправки отзыва-->
+          <div class="form__modal-window">
+            <h2 class="form__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+            <p class="form__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="form__button" type="submit">ок</button>
+          </div>
+          <div class="form__modal-window">
+            <h2 class="form__title">Ваш отзыв отправлен!</h2>
+            <p class="form__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+            <button class="form__button" type="submit"></button>
+          </div>
         </form>
       </main>
 
