@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/source/css/style.css" />
+    <link rel="stylesheet" href="/source/style.css" />
     <base href="https://htmlacademy-adaptive.github.io/2283441-sedona-28/2/">
 </head>
 
@@ -36,7 +36,7 @@
 
       <main class="main-form">
         <section class="hello">
-          <img class="sedona-logo--form background" src="/source/images/sedona.png" width="230" height="40" alt="Седона." />
+          <img class="sedona-logo__form background" src="/source/images/sedona.png" width="230" height="40" alt="Седона." />
           <h2 class="form-title">Оставьте свой отзыв</h2>
           <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
@@ -76,7 +76,7 @@
             </label>
           </fieldset>
 
-          <fieldset class="attractions form__attractions">
+          <fieldset class="form__attractions attractions">
             <h2 class="form-title">посещенные достопримечательности:</h2>
             <label class="attractions__label">
               <input class="attractions__input" type="checkbox" value="Мост Дьявола" checked />
@@ -96,14 +96,14 @@
             </label>
           </fieldset>
 
-          <section class="emotions">
+          <fieldset class="form__emotions">
             <h2 class="form-title">Опишите свои эмоции:</h2>
             <textarea name="comment" rows="10" cols="25">Опишите подробно все свои восторги</textarea>
-          </section>
+          </fieldset>
 
           <section class="review">
             <button class="form__button" type="submit">отправить отзыв</button>
-            <p>* — обязательные поля</p>
+            <p class="button__field">* — обязательные поля</p>
           </section>
         </form>
       </main>
