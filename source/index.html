@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/source/style.css" />
   </head>
 
   <div class="container">
@@ -35,18 +35,76 @@
 
       <main class="main-index">
         <h1 class="visually-hidden">Отель Седона</h1>
+
         <section class="hello">
-          <img class="sedona-logo--index background" src="/source/images/text-index.png" width="280" height="215" alt="Седона." />
+          <img class="sedona-logo__index background" src="/source/images/text-index.png" width="280" height="215" alt="Седона." />
           <h2 class="index-title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
+
+        <!--первая причина -->
         <section class="causes">
-          <article class="city">
-            <h2>настоящий городок</h2>
-            <p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            <img class="" src="" width="" height="" alt="Городок Седона." />
+          <article class="causes__city city city__article--bg-blue">
+            <h2 class="blue__title">настоящий городок</h2>
+            <span class="benefits-number">№1</span>
+            <p class="blue__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <img class="city__photo" src="" width="" height="" alt="Городок Седона." />
+            <div class="city__list">
+              <img src="" width="" height="" alt="Декоративный элемент." />
+              <h3 class="list__title">Жильё</h3>
+              <p class="list__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+            <div class="city__list">
+              <img src="" width="" height="" alt="Декоративный элемент." />
+              <h3 class="list__title">Еда</h3>
+              <p class="list__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="city__list">
+              <img src="" width="" height="" alt="Декоративный элемент." />
+              <h3 class="list__title">Сувениры</h3>
+              <p class="list__text">Не только китайского, но и настоящего местного производства!</p>
+            </div>
+          </article>
+
+          <!--вторая причина -->
+          <article class="causes__city bridge city__article--bg-blue">
+            <h2 class="blue__title">ТАМ ЕСТЬ Мост дьявола</h2>
+            <span class="benefits-number">№2</span>
+            <p class="blue__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <img class="bridge__photo" src="" width="" height="" alt="Городок Седона." />
+          </article>
+
+          <!-- третья причина-->
+          <article class="causes__area area__article--bg-grey">
+            <h2 class="grey__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+            <span class="benefits-number">№3</span>
+            <p class="grey__text">ВСЕ интересные места находятся очень близко</p>
+          </article>
+
+          <!--четвертая причина -->
+          <article class="causes__road road__article--bg-grey">
+            <h2 class="grey__title">КРАСИВАЯ ДОРОГА</h2>
+            <span class="benefits-number">№4</span>
+            <p class="grey__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </article>
+
+          <!--пятая причина -->
+          <article class="causes__tourist tourist__article--bg-blue">
+            <h2 class="grey__title">МАЛО ТУРИСТОВ</h2>
+            <span class="benefits-number">№5</span>
+            <p class="grey__text">Большинство едет в гранд каньони толпится там</p>
           </article>
         </section>
+
+        <section class="hotel-search">
+          <h2 class="hotel-search__interest">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="hotel-search__dates">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
+          <button class="hotel-search__find">Найти Гостиницу</button>
+        </section>
+
+        <div class="map">
+          <img src="" width="" height="" alt="Местополежение Седоны на карте Аризоны." />
+        </div>
       </main>
 
       <footer class="main-footer">
