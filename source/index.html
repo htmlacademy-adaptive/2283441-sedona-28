@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="/source/style.css" />
   </head>
 
-  <div class="container">
-    <body class="page__body">
-      <header class="main-header">
-        <a class="main-header__logo">
-          <img class="main-header__logo-image" href="index.html" src="/source/images/logo.png" width="185" height="95" alt="Логотип Седона." />
+  <body class="page__body body">
+    <div class="body__container">
+      <header class="header">
+        <a class="header__logo">
+          <img class="header__logo-image" href="index.html" src="/source/images/logo.png" width="185" height="95" alt="Логотип Седона." />
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+        <nav class="header__nav nav">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="nav__wrapper">
+            <ul class="nav__list site-list">
               <li class="site-list__item site-list__item--active">
                 <a> Главная </a>
               </li>
@@ -36,60 +36,66 @@
       <main class="main-index">
         <h1 class="visually-hidden">Отель Седона</h1>
 
-        <section class="index__hello">
-          <img class="sedona-logo__index background" src="/source/images/text-index.png" width="280" height="215" alt="Седона." />
-          <h2 class="index__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-          <p class="index__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <section class="main-index__hello hello">
+          <img class="hello__sedona background" src="/source/images/text-index.png" width="280" height="215" alt="Седона." />
+          <h2 class="hello__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+          <p class="hello__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
 
         <!--первая причина -->
         <section class="causes">
-          <article class="causes__city city city__article--bg-blue">
-            <h2 class="blue__title">настоящий городок</h2>
-            <span class="benefits-number">№1</span>
-            <p class="blue__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            <img class="city__photo" src="" width="" height="" alt="Городок Седона." />
-            <div class="city__list">
-              <img src="" width="" height="" alt="Декоративный элемент." />
-              <h3 class="list__title">Жильё</h3>
-              <p class="list__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <article class="causes__advantages advantages advantages__article--bg-blue blue">
+            <div>
+              <h2 class="blue__title">настоящий городок</h2>
+              <span class="benefits-number">№1</span>
+              <p class="blue__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <div class="city__list">
-              <img src="" width="" height="" alt="Декоративный элемент." />
-              <h3 class="list__title">Еда</h3>
-              <p class="list__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <div>
+              <img class="advantages__city" src="" width="" height="" alt="Городок Седона." />
             </div>
-            <div class="city__list">
-              <img src="" width="" height="" alt="Декоративный элемент." />
-              <h3 class="list__title">Сувениры</h3>
-              <p class="list__text">Не только китайского, но и настоящего местного производства!</p>
+            <div class="advantages__services services">
+              <div class="services__list list">
+                <img src="" width="" height="" alt="Декоративный элемент." />
+                <h3 class="list__title">Жильё</h3>
+                <p class="list__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
+              <div class="services__list list">
+                <img src="" width="" height="" alt="Декоративный элемент." />
+                <h3 class="list__title">Еда</h3>
+                <p class="list__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+              <div class="services__list list">
+                <img src="" width="" height="" alt="Декоративный элемент." />
+                <h3 class="list__title">Сувениры</h3>
+                <p class="list__text">Не только китайского, но и настоящего местного производства!</p>
+              </div>
             </div>
           </article>
 
           <!--вторая причина -->
-          <article class="causes__city bridge city__article--bg-blue">
+          <article class="causes__advantages advantages advantages__article--bg-blue blue">
             <h2 class="blue__title">ТАМ ЕСТЬ Мост дьявола</h2>
             <span class="benefits-number">№2</span>
             <p class="blue__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="bridge__photo" src="" width="" height="" alt="Городок Седона." />
+            <img class="advantages__bridge" src="" width="" height="" alt="Мост Дьявола." />
           </article>
 
           <!-- третья причина-->
-          <article class="causes__area area__article--bg-grey">
+          <article class="causes__advantages advantages advantages__article--bg-grey grey">
             <h2 class="grey__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
             <span class="benefits-number">№3</span>
             <p class="grey__text">ВСЕ интересные места находятся очень близко</p>
           </article>
 
           <!--четвертая причина -->
-          <article class="causes__road road__article--bg-grey">
+          <article class="causes__advantages advantages advantages__article--bg-grey grey">
             <h2 class="grey__title">КРАСИВАЯ ДОРОГА</h2>
             <span class="benefits-number">№4</span>
             <p class="grey__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </article>
 
           <!--пятая причина -->
-          <article class="causes__tourist tourist__article--bg-grey">
+          <article class="causes__advantages advantages advantages__article--bg-grey grey">
             <h2 class="grey__title">МАЛО ТУРИСТОВ</h2>
             <span class="benefits-number">№5</span>
             <p class="grey__text">Большинство едет в гранд каньони толпится там</p>
@@ -99,7 +105,7 @@
         <section class="index__hotel hotel">
           <h2 class="hotel__interest">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="hotel__dates">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
-          <button class="hotel__find">Найти Гостиницу</button>
+          <a href="#" class="hotel__find">Найти Гостиницу</a>
         </section>
 
         <div class="map">
@@ -107,10 +113,10 @@
         </div>
       </main>
 
-      <footer class="main-footer">
+      <footer class="footer">
         <img class="footer__hashtag" src="" width="" height="" alt="хэштег visitSEDONA." />
 
-        <div class="main-footer__social">
+        <div class="footer__social">
           <a class="social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
@@ -127,6 +133,6 @@
           <span class="visually-hidden">HTMLacademy</span>
         </a>
       </footer>
-    </body>
-  </div>
+    </div>
+  </body>
 </html>
