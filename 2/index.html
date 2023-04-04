@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/source/style.css" />
+    <link rel="stylesheet" href="" />
     <base href="https://htmlacademy-adaptive.github.io/2283441-sedona-28/2/">
 </head>
 
-  <body class="page__body body">
-    <div class="body__container">
+  <body>
+    <div class="container">
       <header class="header">
         <a class="header__logo">
-          <img class="header__logo-image" href="index.html" src="/source/images/logo.png" width="185" height="95" alt="Логотип Седона." />
+          <img class="header__logo-image" href="index.html" src="" width="185" height="95" alt="Логотип Седона." />
         </a>
         <nav class="header__nav nav">
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -32,27 +32,26 @@
             </ul>
           </div>
         </nav>
+        <img class="heder__preview" src="" width="280" height="215" alt="Седона." />
       </header>
 
-      <main class="main-index">
+      <main class="main">
         <h1 class="visually-hidden">Отель Седона</h1>
 
-        <section class="main-index__hello hello">
-          <img class="hello__sedona background" src="/source/images/text-index.png" width="280" height="215" alt="Седона." />
-          <h2 class="hello__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-          <p class="hello__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </section>
-
-        <!--первая причина -->
-        <section class="causes">
-          <article class="causes__advantages advantages advantages__article--bg-blue blue">
-            <div>
-              <h2 class="blue__title">настоящий городок</h2>
-              <span class="benefits-number">№1</span>
-              <p class="blue__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        <section class="main__causes causes">
+          <div class="main__block block">
+            <h2 class="block__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+            <p class="block__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
+          <!--первая причина -->
+          <article class="causes__advantages advantages">
+            <div class="advantages__article--bg-blue">
+              <h2 class="advantages__title">настоящий городок</h2>
+              <span class="advantages__benefits-number">№1</span>
+              <p class="advantages__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <div>
-              <img class="advantages__city" src="" width="" height="" alt="Городок Седона." />
+            <div class="advantages__img-wrapper">
+              <img src="" width="" height="" alt="Городок Седона." />
             </div>
             <div class="advantages__services services">
               <div class="services__list list">
@@ -73,63 +72,66 @@
             </div>
           </article>
 
-          <!--вторая причина -->
-          <article class="causes__advantages advantages advantages__article--bg-blue blue">
-            <h2 class="blue__title">ТАМ ЕСТЬ Мост дьявола</h2>
-            <span class="benefits-number">№2</span>
-            <p class="blue__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantages__bridge" src="" width="" height="" alt="Мост Дьявола." />
-          </article>
+          <article class="causes__advantages advantages">
+            <!--вторая причина -->
+            <div class="advantages__article--bg-blue">
+              <h2 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h2>
+              <span class="advantages__benefits-number">№2</span>
+              <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="advantages__img-wrapper">
+              <img src="" width="" height="" alt="Мост Дьявола." />
+            </div>
+            <!-- третья причина-->
+            <div class="advantages__article--bg-grey">
+              <h2 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+              <span class="advantages__benefits-number">№3</span>
+              <p class="advantages__text">ВСЕ интересные места находятся очень близко</p>
+            </div>
 
-          <!-- третья причина-->
-          <article class="causes__advantages advantages advantages__article--bg-grey grey">
-            <h2 class="grey__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-            <span class="benefits-number">№3</span>
-            <p class="grey__text">ВСЕ интересные места находятся очень близко</p>
-          </article>
+            <!--четвертая причина -->
+            <div class="advantages__article--bg-grey">
+              <h2 class="advantages__advantages__title">КРАСИВАЯ ДОРОГА</h2>
+              <span class="benefits-number">№4</span>
+              <p class="advantages__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            </div>
 
-          <!--четвертая причина -->
-          <article class="causes__advantages advantages advantages__article--bg-grey grey">
-            <h2 class="grey__title">КРАСИВАЯ ДОРОГА</h2>
-            <span class="benefits-number">№4</span>
-            <p class="grey__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-          </article>
-
-          <!--пятая причина -->
-          <article class="causes__advantages advantages advantages__article--bg-grey grey">
-            <h2 class="grey__title">МАЛО ТУРИСТОВ</h2>
-            <span class="benefits-number">№5</span>
-            <p class="grey__text">Большинство едет в гранд каньони толпится там</p>
+            <!--пятая причина -->
+            <div class="advantages__article--bg-grey">
+              <h2 class="advantages__title">МАЛО ТУРИСТОВ</h2>
+              <span class="advantages__benefits-number">№5</span>
+              <p class="advantages__text">Большинство едет в гранд каньони толпится там</p>
+            </div>
           </article>
         </section>
 
-        <section class="index__hotel hotel">
-          <h2 class="hotel__interest">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-          <p class="hotel__dates">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
-          <a href="#" class="hotel__find">Найти Гостиницу</a>
+        <section class="main__content content">
+          <h2 class="content__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="content__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
+          <a href="#" class="content__find">Найти Гостиницу</a>
         </section>
 
-        <div class="map">
+        <div class="main__map">
           <img src="" width="" height="" alt="Местополежение Седоны на карте Аризоны." />
         </div>
       </main>
 
       <footer class="footer">
-        <img class="footer__hashtag" src="" width="" height="" alt="хэштег visitSEDONA." />
+        <p class="footer__hashtag">#visitSEDONA</p>
 
-        <div class="footer__social">
-          <a class="social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
+        <div class="footer__social social">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
-          <a class="social__link--telegram" href="https://t.me/htmlacademy" target="_blank">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank">
             <span class="visually-hidden">Телеграмм</span>
           </a>
-          <a class="social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </div>
 
-        <a class="main-footer__copyright academy" href="https://htmlacademy.ru/" target="_blank">
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/" target="_blank">
           <p class="copyright__text">разработано</p>
           <span class="visually-hidden">HTMLacademy</span>
         </a>

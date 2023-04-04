@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/source/style.css" />
+    <link rel="stylesheet" href="" />
     <base href="https://htmlacademy-adaptive.github.io/2283441-sedona-28/2/">
 </head>
 
-  <body class="page__body">
-    <div class="body__container">
+  <body>
+    <div class="container">
       <header class="header">
         <a class="header__logo">
-          <img class="header__logo-image" href="index.html" src="/source/images/logo.png" width="185" height="95" alt="Логотип Седона." />
+          <img class="header__logo-image" href="index.html" src="" width="185" height="95" alt="Логотип Седона." />
         </a>
         <nav class="header__nav nav">
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -32,22 +32,24 @@
             </ul>
           </div>
         </nav>
+        <img class="heder__preview-logo" src="" width="" height="" alt="Седона." />
       </header>
 
       <main class="main">
-        <section class="main__hello hello">
-          <img class="hello__sedona-logo background" src="/source/images/sedona.png" width="230" height="40" alt="Седона." />
-          <h2 class="hello__title">Фото и видео</h2>
-          <p class="hello__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </section>
-
-        <section class="photo">
+        <section class="main__photo photo">
+          <div class="main__block block">
+            <h2 class="block__title">Фото и видео</h2>
+            <p class="block__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
           <article class="photo__picture picture">
             <img class="picture__scenery" src="" width="" height="" alt="пейзаж гор на закате." />
             <div class="picture__sign">
               <b class="picture__description">неродные просторы</b>
               <p class="picture__name">Автор фото: Борис</p>
-              <span class="picture__like">1350</span>
+            </div>
+            <div class="picture__like like">
+              <img class="like__element" src="" width="" height="" alt="Поставить 'мне нравится'." />
+              <span class="like__count">1350</span>
             </div>
           </article>
 
@@ -56,7 +58,10 @@
             <div class="picture__sign">
               <b class="picture__description">Местная растительность</b>
               <p class="picture__name">Автор фото: Сергей</p>
-              <span class="picture__like">143</span>
+            </div>
+            <div class="picture__like like">
+              <img class="like__element" src="" width="" height="" alt="Поставить 'мне нравится'." />
+              <span class="like__count">143</span>
             </div>
           </article>
 
@@ -65,27 +70,33 @@
             <div class="picture__sign">
               <b class="picture__description">Дорога на север</b>
               <p class="picture__name">Автор фото: Петр</p>
-              <span class="picture__like">96</span>
+            </div>
+            <div class="picture__like like">
+              <img class="like__element" src="" width="" height="" alt="Поставить 'мне нравится'." />
+              <span class="like__count">96</span>
             </div>
           </article>
 
-          <article class="photo__picture">
+          <article class="photo__picture picture">
             <img class="picture__scenery" src="" width="" height="" alt="каньон в горах." />
             <div class="picture__sign">
               <b class="picture__description">Мост Дьявола</b>
               <p class="picture__name">Автор фото: Антон</p>
-              <span class="picture__like">254</span>
+            </div>
+            <div class="picture__like like">
+              <img class="like__element" src="" width="" height="" alt="Поставить 'мне нравится'." />
+              <span class="like__count">254</span>
             </div>
           </article>
         </section>
 
-        <section class="doubts">
-          <h2 class="catalog__title">Все еще сомневаетесь?</h2>
-          <p class="catalog__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <div class="video">
-            <a href="">
-              <img src="" />
-              <button class="play">Play</button>
+        <section class="main__content content">
+          <h2 class="content__title">Все еще сомневаетесь?</h2>
+          <p class="content__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="content__video">
+            <a href="#">
+              <img class="content__preview" src="" width="" height="" alt="превью видеоролика." />
+              <div class="content__button">Play</div>
             </a>
           </div>
         </section>
