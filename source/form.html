@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="" />
   </head>
 
-  <body class="page__body body">
-    <div class="body__container">
+  <body>
+    <div class="container">
       <header class="header">
         <a class="header__logo">
           <img class="header__logo-image" href="index.html" src="" width="185" height="95" alt="Логотип Седона." />
@@ -31,14 +31,14 @@
             </ul>
           </div>
         </nav>
-        <img class="header__sedona-logo" src="" width="230" height="40" alt="Седона." />
+        <img class="header__preview-logo" src="" width="230" height="40" alt="Седона." />
       </header>
-      <section></section>
+
       <main class="main">
         <form class="form" method="post" action="#">
-          <div class="main__content content">
-            <h2 class="content__title">Оставьте свой отзыв</h2>
-            <p class="content__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="main__block block">
+            <h2 class="block__title">Оставьте свой отзыв</h2>
+            <p class="block__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <fieldset class="form__text fieldset text">
             <legend class="fieldset__title">Представьтесь:</legend>
@@ -84,23 +84,23 @@
             </label>
           </fieldset>
 
-          <fieldset class="form__checkbox fieldset checkboxs">
+          <fieldset class="form__checkbox fieldset checkbox">
             <legend class="fieldset__title">посещенные достопримечательности:</legend>
             <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" value="Мост Дьявола" checked />
-              <span class="checkboxs__text">Мост Дьявола</span>
+              <span class="checkbox__text">Мост Дьявола</span>
             </label>
             <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" value="Гора-Колокол" checked />
-              <span class="checkboxs__text">Гора-Колокол</span>
+              <span class="checkbox__text">Гора-Колокол</span>
             </label>
             <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" value="Слайд-парк" checked />
-              <span class="checkboxs__text">Слайд-парк</span>
+              <span class="checkbox__text">Слайд-парк</span>
             </label>
             <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" value="Красные скалы" />
-              <span class="checkboxs__text">Красные скалы</span>
+              <span class="checkbox__text">Красные скалы</span>
             </label>
           </fieldset>
 
@@ -140,7 +140,6 @@
       </footer>
 
       <!--окна отправки отзыва-->
-      <!--
       <div class="form__overlay overlay">
         <div class="overlay__modal-window overlay">
           <h2 class="overlay__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
@@ -153,7 +152,6 @@
           <button class="overlay__button" type="reset">ЗАКРЫТЬ ОКНО</button>
         </div>
       </div>
-      -->
     </div>
   </body>
 </html>
