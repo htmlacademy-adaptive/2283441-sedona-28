@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css" />
     <base href="https://htmlacademy-adaptive.github.io/2283441-sedona-28/3/">
@@ -12,7 +13,7 @@
       <h1 class="visually-hidden">Отель Седона</h1>
       <header class="header">
         <a class="header__logo">
-          <img class="header__logo-image" href="index.html" src="" width="185" height="95" alt="Логотип Седона." />
+          <img class="header__logo-image" href="index.html" src="./img/logo/logo.png" width="185" height="95" alt="Логотип Седона." />
         </a>
         <nav class="header__nav nav">
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -36,58 +37,67 @@
       </header>
 
       <main class="main">
-        <div class="heder__preview-logo">
-          <img src="" width="" height="" alt="Седона." />
+        <div class="main__preview-logo">
+          <img src="./img/logo/text-preview.png" width="" height="" alt="Седона." />
         </div>
         <section class="main__photo photo">
           <div class="main__block block">
             <h2 class="block__title">Фото и видео</h2>
             <p class="block__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
+
           <article class="photo__picture picture">
-            <img class="picture__scenery" src="" width="" height="" alt="пейзаж гор на закате." />
+            <div class="picture__scenery">
+              <img class="scenery__cover" src="./img/picture/photo-1-mobile.jpg" width="" height="" alt="пейзаж гор на закате." />
+            </div>
             <div class="picture__sign">
               <b class="picture__description">неродные просторы</b>
               <p class="picture__name">Автор фото: Борис</p>
             </div>
             <div class="picture__like like">
-              <img class="like__element" src="" width="" height="" alt="Поставить 'мне нравится'." />
+              <img class="like__element" src="./img/svg/like-icon.svg" width="" height="" alt="Поставить 'мне нравится'." />
               <span class="like__count">1350</span>
             </div>
           </article>
 
           <article class="photo__picture picture">
-            <img class="picture__scenery" src="" width="" height="" alt="кактусы на фоне гор." />
+            <div class="picture__scenery">
+              <img class="scenery__cover" src="./img/picture/photo-2-mobile.jpg" width="" height="" alt="кактусы на фоне гор." />
+            </div>
             <div class="picture__sign">
               <b class="picture__description">Местная растительность</b>
               <p class="picture__name">Автор фото: Сергей</p>
             </div>
             <div class="picture__like like">
-              <img class="like__element" src="" width="" height="" alt="Поставить 'мне нравится'." />
+              <img class="like__element" src="./img/svg/like-icon.svg" width="" height="" alt="Поставить 'мне нравится'." />
               <span class="like__count">143</span>
             </div>
           </article>
 
           <article class="photo__picture picture">
-            <img class="picture__scenery" src="" width="" height="" alt="лесная дорога в горах." />
+            <div class="picture__scenery">
+              <img class="scenery__cover" src="./img/picture/photo-3-mobile.jpg" width="" height="" alt="лесная дорога в горах." />
+            </div>
             <div class="picture__sign">
               <b class="picture__description">Дорога на север</b>
               <p class="picture__name">Автор фото: Петр</p>
             </div>
             <div class="picture__like like">
-              <img class="like__element" src="" width="" height="" alt="Поставить 'мне нравится'." />
+              <img class="like__element" src="./img/svg/like-icon.svg" width="" height="" alt="Поставить 'мне нравится'." />
               <span class="like__count">96</span>
             </div>
           </article>
 
           <article class="photo__picture picture">
-            <img class="picture__scenery" src="" width="" height="" alt="каньон в горах." />
+            <div class="picture__scenery">
+              <img class="scenery__cover" src="./img/picture/photo-4-mobile.jpg" width="" height="" alt="каньон в горах." />
+            </div>
             <div class="picture__sign">
               <b class="picture__description">Мост Дьявола</b>
               <p class="picture__name">Автор фото: Антон</p>
             </div>
             <div class="picture__like like">
-              <img class="like__element" src="" width="" height="" alt="Поставить 'мне нравится'." />
+              <img class="like__element" src="./img/svg/like-icon.svg" width="" height="" alt="Поставить 'мне нравится'." />
               <span class="like__count">254</span>
             </div>
           </article>
@@ -96,12 +106,11 @@
         <section class="main__content content">
           <h2 class="content__title">Все еще сомневаетесь?</h2>
           <p class="content__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <div class="content__video">
-            <a href="#">
-              <img class="content__preview" src="" width="" height="" alt="превью видеоролика." />
-              <div class="content__button">Play</div>
-            </a>
-          </div>
+
+          <a class="content__video" href="https://www.youtube.com/watch?v=z5MB53EuRyE" target="_blank">
+            <img class="content__preview" src="./img/picture/video-mobile.jpg" width="" height="" alt="превью видеоролика." />
+            <div class="content__button">Play</div>
+          </a>
         </section>
       </main>
 
@@ -109,13 +118,13 @@
         <p class="footer__hashtag">#visitSEDONA</p>
 
         <div class="footer__social social">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
+          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank">
+          <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
             <span class="visually-hidden">Телеграмм</span>
           </a>
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </div>
