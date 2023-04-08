@@ -1,3 +1,15 @@
 // базовые стили
 @import "./base/fonts.scss";
 @import "./base/base.scss";
+
+// стили для шапки
+@import "./blocks/heder/heder__nav.scss";
+
+// стили для main
+@import "./blocks/main/overall.scss";
+@import "./blocks/main/main__causes.scss";
+@import "./blocks/main/main__photo.scss";
+@import "./blocks/main/form.scss";
+
+//стили для подвала
+@import "./blocks/footer/footer.scss";

@@ -1,0 +1,20 @@
+.fieldset {
+  margin: 0;
+  padding: 10px 0;
+  border: none;
+}
+
+.fieldset__title {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.form__info {
+  margin: 0;
+  padding: 20px 20px;
+}
