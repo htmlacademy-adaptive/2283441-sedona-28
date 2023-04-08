@@ -2,14 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/source/fonts/ptsans.woff2") format("woff2"), url("/source/fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans bold";
   font-style: bold;
   font-weight: 700;
-  src: url("/source/fonts/ptsansbold.woff2") format("woff2"), url("/source/fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
 img {
@@ -75,14 +75,14 @@ body {
 }
 
 .main__preview {
-  background-image: url("../../../img/logo/background-index.png");
+  background-image: url("../img/logo/background-index.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .main__preview-logo {
-  background-image: url("../../../img/logo/background-preview.png");
+  background-image: url("../img/logo/background-preview.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
