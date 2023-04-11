@@ -1,0 +1,41 @@
+//повторяющиеся стили на разных страницах
+
+.main__preview {
+  background-image: url("../img/logo/background-index.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main__preview-logo {
+  background-image: url("../img/logo/background-preview.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main__block {
+  padding: 35px 10px;
+}
+
+.block__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.block__text {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.block__find {
+  text-decoration: none;
+  padding: 15px 50px;
+  background-color: hsl(203, 47%, 66%);
+  color: #ffffff;
+}
