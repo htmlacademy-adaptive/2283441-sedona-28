@@ -1,0 +1,36 @@
+.advantages__article {
+  margin: 0;
+  padding: 35px 20px;
+
+  &--bg-blue {
+    background-color: #81b3d2;
+  }
+
+  &--bg-grey {
+    background-color: #eeeeee;
+  }
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.advantages__benefits-number {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.advantages--color {
+  color: #ffffff;
+}

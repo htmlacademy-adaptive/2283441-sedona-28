@@ -1,11 +1,9 @@
 .fieldset {
-  box-sizing: border-box;
   margin: 0;
   border: none;
 }
 
 .fieldset__title {
-  box-sizing: border-box;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -18,53 +16,9 @@
   margin-bottom: 60px;
 }
 
-.text__label {
-  font-size: 14px;
-  line-height: 21px;
-  text-align: start;
-}
-
-.text__section {
-  margin-bottom: 15px;
-}
-
-.text__input {
-  height: 58px;
-  border: none;
-  padding: 16px;
-  background-color: #f2f2f2;
-  color: #000000;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-}
-
 .form__info {
   padding: 0 40px;
   margin-bottom: 60px;
-}
-
-.info__section {
-  margin-bottom: 15px;
-}
-
-.info__input {
-  height: 58px;
-  border: none;
-  padding: 16px;
-  background-color: #f2f2f2;
-  color: #000000;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-}
-
-.info__label {
-  font-size: 14px;
-  line-height: 21px;
-  text-align: start;
 }
 
 .form__radio {
@@ -72,23 +26,9 @@
   margin-bottom: 60px;
 }
 
-.radio__text {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-}
-
 .form__checkbox {
   padding: 0 40px;
   margin-bottom: 60px;
-}
-
-.checkbox__text {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
 }
 
 .form__textarea {
@@ -96,24 +36,7 @@
   margin-bottom: 60px;
 }
 
-.textarea__comment-textarea {
-  width: 100%;
-  resize: vertical;
-  border: 0;
-  background-color: #f2f2f2;
-}
-
 .form__button {
   padding: 0 40px;
   margin-bottom: 60px;
-}
-
-.button__control {
-  border: none;
-  background-color: #81b3d2;
-  color: #ffffff;
-  padding: 15px 50px;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
 }
