@@ -1,9 +1,11 @@
 // базовые стили
+@import "./base/variables.scss";
 @import "./base/fonts.scss";
 @import "./base/base.scss";
 
 // стили для шапки
-@import "./blocks/heder/heder__nav.scss";
+@import "./blocks/header/header__nav.scss";
+@import "./blocks/header/header__logo.scss";
 
 // стили для main
 @import "./blocks/main/overall.scss";

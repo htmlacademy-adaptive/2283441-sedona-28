@@ -1,26 +1,24 @@
+// обертка(ul)
 .nav__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: auto;
-  height: auto;
-  background-color: hsl(203, 47%, 66%);
+  background-color: $blue;
 }
 
+// обертка(li)
 .site-list__item {
   padding: 15px 0;
 }
 
+// ссылка(a)
 .site-list__link {
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
   padding: 5px 0;
 }
 
-// .header__logo {
-//   position: relative;
-// }
-
+// кнопка
 .nav__toggle {
   // position: absolute;
   padding: 0;

@@ -9,19 +9,38 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $white;
+  color: $black;
   text-align: center;
   text-transform: uppercase;
-  min-height: 100%;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.container {
+.body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.container {
+  width: 280px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 640px;
+    padding: 0 64px;
+  }
+}
+
+@media (min-width: $desktop-width) and (max-width: 1600px) {
+  .container {
+    width: 960px;
+    padding: 0 120px;
+  }
 }
 
 /* .visually-hidden {

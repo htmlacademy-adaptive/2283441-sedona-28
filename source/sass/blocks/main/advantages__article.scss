@@ -3,11 +3,11 @@
   padding: 35px 20px;
 
   &--bg-blue {
-    background-color: #81b3d2;
+    background-color: $blue;
   }
 
   &--bg-grey {
-    background-color: #eeeeee;
+    background-color: $gray;
   }
 }
 
@@ -32,5 +32,5 @@
 }
 
 .advantages--color {
-  color: #ffffff;
+  color: $white;
 }
