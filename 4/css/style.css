@@ -27,17 +27,34 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  min-height: 100%;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.container {
+.body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.container {
+  width: 280px;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 640px;
+    padding: 0 64px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1600px) {
+  .container {
+    width: 960px;
+    padding: 0 120px;
+  }
+}
 /* .visually-hidden {
   position: absolute;
   width: 1px;
@@ -54,9 +71,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: auto;
-  height: auto;
-  background-color: #80b2d1;
+  background-color: #81b3d2;
 }
 
 .site-list__item {
@@ -209,31 +224,11 @@ body {
   margin-bottom: 20px;
 }
 
-.form__text {
-  padding: 0 40px;
-  margin-bottom: 60px;
-}
-
-.form__info {
-  padding: 0 40px;
-  margin-bottom: 60px;
-}
-
-.form__radio {
-  padding: 0 40px;
-  margin-bottom: 60px;
-}
-
-.form__checkbox {
-  padding: 0 40px;
-  margin-bottom: 60px;
-}
-
-.form__textarea {
-  padding: 0 40px;
-  margin-bottom: 60px;
-}
-
+.form__text,
+.form__info,
+.form__radio,
+.form__checkbox,
+.form__textarea,
 .form__button {
   padding: 0 40px;
   margin-bottom: 60px;
@@ -271,7 +266,7 @@ body {
   height: 58px;
   border: none;
   padding: 16px;
-  background-color: #f2f2f2;
+  background-color: #81b3d2;
   color: #000000;
   font-weight: 700;
   font-size: 18px;
