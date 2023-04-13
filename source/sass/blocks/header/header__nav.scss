@@ -18,9 +18,14 @@
   padding: 5px 0;
 }
 
-// кнопка
-.nav__toggle {
-  // position: absolute;
-  padding: 0;
-  margin: 17px 20px 17px 277px;
+@media (min-width: $tablet-width) {
+  .nav__list {
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-list__link {
+    color: $black;
+  }
 }
