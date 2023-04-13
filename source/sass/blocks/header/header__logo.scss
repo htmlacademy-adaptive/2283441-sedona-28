@@ -1,1 +1,9 @@
 //coment
+@media (min-width: $tablet-width) {
+  .header__logo-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
