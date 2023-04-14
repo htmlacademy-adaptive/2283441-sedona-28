@@ -17,3 +17,9 @@
   margin: 0;
   padding: 20px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .list__title {
+    font-size: 21px;
+  }
+}

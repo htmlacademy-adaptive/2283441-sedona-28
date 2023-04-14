@@ -1,0 +1,46 @@
+//comment
+@media (min-width: $tablet-width) {
+  .picture__scenery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .picture__scenery--big {
+    height: 400px;
+    width: 648px;
+  }
+
+  .picture__scenery--small {
+    height: 267px;
+    width: 324px;
+  }
+
+  .photo__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .block__preview {
+    height: 500px;
+    width: 648px;
+  }
+
+  .photo__picture {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .picture__scenery--big {
+    height: 400px;
+    width: 1200px;
+  }
+
+  .picture__scenery--small {
+    height: 267px;
+    width: 400px;
+  }
+}

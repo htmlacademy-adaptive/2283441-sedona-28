@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  height: 389px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main__preview-logo {
@@ -12,6 +16,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  height: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main__block {
@@ -26,6 +34,10 @@
   margin: 0;
 }
 
+.block__title--big {
+  font-size: 21px;
+}
+
 .block__text {
   font-size: 14px;
   line-height: 21px;
@@ -38,4 +50,18 @@
   padding: 15px 50px;
   background-color: $blue;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .block__title {
+    font-size: 21px;
+  }
+
+  .block__title--big {
+    font-size: 30px;
+  }
+
+  .main__block {
+    padding: 56px 125px;
+  }
 }

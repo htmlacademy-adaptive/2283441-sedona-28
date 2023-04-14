@@ -34,3 +34,9 @@
 .advantages--color {
   color: $white;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    font-size: 21px;
+  }
+}
