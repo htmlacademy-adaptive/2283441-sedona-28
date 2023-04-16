@@ -17,19 +17,13 @@
   }
 
   .photo__block {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .block__preview {
     height: 500px;
     width: 648px;
-  }
-
-  .photo__picture {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
   }
 }
 
@@ -42,5 +36,10 @@
   .picture__scenery--small {
     height: 267px;
     width: 400px;
+  }
+
+  .photo__block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -4,6 +4,7 @@
 
   &--bg-blue {
     background-color: $blue;
+    color: $white;
   }
 
   &--bg-grey {
@@ -29,10 +30,6 @@
 .advantages__benefits-number {
   margin: 0;
   padding: 20px 0;
-}
-
-.advantages--color {
-  color: $white;
 }
 
 @media (min-width: $tablet-width) {

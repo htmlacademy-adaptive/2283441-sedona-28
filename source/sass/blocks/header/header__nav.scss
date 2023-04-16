@@ -21,8 +21,14 @@
 @media (min-width: $tablet-width) {
   .nav__list {
     background-color: $white;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    &::after {
+      content: "";
+      grid-column: 3/4;
+      grid-row: 1/3;
+    }
   }
 
   .site-list__link {
