@@ -87,8 +87,13 @@ body {
 @media (min-width: 768px) {
   .nav__list {
     background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .nav__list::after {
+    content: "";
+    grid-column: 3/4;
+    grid-row: 1/3;
   }
 
   .site-list__link {
@@ -189,6 +194,7 @@ body {
 }
 .advantages__article--bg-blue {
   background-color: #81b3d2;
+  color: #ffffff;
 }
 .advantages__article--bg-grey {
   background-color: #eeeeee;
@@ -212,10 +218,6 @@ body {
 .advantages__benefits-number {
   margin: 0;
   padding: 20px 0;
-}
-
-.advantages--color {
-  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -283,7 +285,7 @@ body {
 }
 .picture__sign {
   text-align: left;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .picture__description {
@@ -300,7 +302,7 @@ body {
 
 .picture__like {
   text-align: left;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .like__count {
@@ -331,6 +333,19 @@ body {
     padding-bottom: 10px;
   }
 }
+@media (min-width: 1200px) {
+  .photo__picture {
+    position: relative;
+  }
+
+  .picture__block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+  }
+}
 @media (min-width: 768px) {
   .picture__scenery {
     display: flex;
@@ -349,19 +364,13 @@ body {
   }
 
   .photo__block {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .block__preview {
     height: 500px;
     width: 648px;
-  }
-
-  .photo__picture {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
   }
 }
 @media (min-width: 1200px) {
@@ -373,6 +382,11 @@ body {
   .picture__scenery--small {
     height: 267px;
     width: 400px;
+  }
+
+  .photo__block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .fieldset {
@@ -430,7 +444,7 @@ body {
   height: 58px;
   border: none;
   padding: 16px;
-  background-color: #81b3d2;
+  background-color: #eeeeee;
   color: #000000;
   font-weight: 700;
   font-size: 18px;
