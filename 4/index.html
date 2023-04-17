@@ -12,27 +12,25 @@
     <div class="container">
       <h1 class="visually-hidden">Городок Седона</h1>
       <header class="header">
-        <a class="header__logo">
-          <img class="header__logo-image" href="index.html" src="./img/logo/logo.png" width="185" height="95" alt="Логотип Седона." />
+        <a class="header__logo" href="index.html">
+          <img class="header__logo-image" src="./img/logo/logo.png" width="185" height="95" alt="Логотип Седона." />
         </a>
         <nav class="header__nav nav">
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="nav__wrapper">
-            <ul class="nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link"> Главная </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html"> фото и видео </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html"> форма отзыва </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru" target="_blank"> HTML Academy </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link"> Главная </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html"> фото и видео </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html"> форма отзыва </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru" target="_blank"> HTML Academy </a>
+            </li>
+          </ul>
         </nav>
       </header>
 
@@ -61,18 +59,24 @@
             <div class="advantages__block advantages__block--triple services">
               <div class="services__list list">
                 <img src="./img/svg/house.svg" width="39" height="37" alt="Декоративный элемент." />
-                <h3 class="list__title">Жильё</h3>
-                <p class="list__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <div class="list__block">
+                  <h3 class="list__title">Жильё</h3>
+                  <p class="list__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </div>
               </div>
               <div class="services__list list">
                 <img src="./img/svg/food.svg" width="39" height="37" alt="Декоративный элемент." />
-                <h3 class="list__title">Еда</h3>
-                <p class="list__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <div class="list__block">
+                  <h3 class="list__title">Еда</h3>
+                  <p class="list__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                </div>
               </div>
               <div class="services__list list">
                 <img src="./img/svg/souvenirs.svg" width="39" height="37" alt="Декоративный элемент." />
-                <h3 class="list__title">Сувениры</h3>
-                <p class="list__text">Не только китайского, но и настоящего местного производства!</p>
+                <div class="list__block">
+                  <h3 class="list__title">Сувениры</h3>
+                  <p class="list__text">Не только китайского, но и настоящего местного производства!</p>
+                </div>
               </div>
             </div>
           </article>
@@ -117,7 +121,9 @@
         <div class="main__block block">
           <h2 class="block__title block__title--big">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="block__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
-          <a href="#" class="block__find">Найти Гостиницу</a>
+          <div class="block__finds-link">
+            <a href="#" class="block__find">Найти Гостиницу</a>
+          </div>
         </div>
 
         <div class="main__map">
