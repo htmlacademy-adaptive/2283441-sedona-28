@@ -1,6 +1,8 @@
 .advantages__article {
   margin: 0;
   padding: 35px 20px;
+  box-sizing: border-box;
+  min-height: 256px;
 
   &--bg-blue {
     background-color: $blue;
@@ -18,6 +20,10 @@
   line-height: 26px;
   margin: 0;
   padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__text {
@@ -32,8 +38,24 @@
   padding: 20px 0;
 }
 
-@media (min-width: $tablet-width) {
-  .advantages__title {
-    font-size: 21px;
+.advantages__services {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.advantages__block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+
+    &--triple {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }

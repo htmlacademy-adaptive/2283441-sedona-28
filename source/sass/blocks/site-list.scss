@@ -1,0 +1,20 @@
+// обертка(li)
+.site-list__item {
+  padding: 15px 0;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
+}
+
+// ссылка(a)
+.site-list__link {
+  color: $white;
+  text-decoration: none;
+  padding: 5px 0;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
+}

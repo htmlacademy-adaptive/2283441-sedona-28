@@ -1,14 +1,14 @@
-.services__list {
-  margin: 0;
-  padding: 35px 20px;
-}
-
 .list__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   margin: 0;
   padding: 20px 0;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .list__text {
@@ -16,10 +16,4 @@
   line-height: 21px;
   margin: 0;
   padding: 20px 0;
-}
-
-@media (min-width: $tablet-width) {
-  .list__title {
-    font-size: 21px;
-  }
 }

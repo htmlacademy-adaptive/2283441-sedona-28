@@ -4,22 +4,12 @@
   padding: 0;
   margin: 0;
   background-color: $blue;
-}
+  position: absolute;
+  top: 0;
+  width: 100%;
 
-// обертка(li)
-.site-list__item {
-  padding: 15px 0;
-}
-
-// ссылка(a)
-.site-list__link {
-  color: $white;
-  text-decoration: none;
-  padding: 5px 0;
-}
-
-@media (min-width: $tablet-width) {
-  .nav__list {
+  @media (min-width: $tablet-width) {
+    position: static;
     background-color: $white;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -30,8 +20,16 @@
       grid-row: 1/3;
     }
   }
+}
 
-  .site-list__link {
-    color: $black;
+// кнопка
+.nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
