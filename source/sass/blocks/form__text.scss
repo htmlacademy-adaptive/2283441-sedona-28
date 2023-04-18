@@ -10,9 +10,11 @@
 
 .text__input {
   font-family: $font;
+  width: 280px;
   height: 58px;
   border: none;
   padding: 16px;
+  padding-right: 0;
   background-color: $gray;
   color: #000000;
   font-weight: 700;

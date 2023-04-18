@@ -1,5 +1,6 @@
 .fieldset {
   margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -17,6 +18,5 @@
 .form__checkbox,
 .form__textarea,
 .form__button {
-  padding: 0 40px;
   margin-bottom: 60px;
 }
