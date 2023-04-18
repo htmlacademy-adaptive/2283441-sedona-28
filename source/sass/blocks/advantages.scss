@@ -1,0 +1,61 @@
+.advantages__article {
+  margin: 0;
+  padding: 35px 20px;
+  box-sizing: border-box;
+  min-height: 256px;
+
+  &--bg-blue {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &--bg-grey {
+    background-color: $gray;
+  }
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.advantages__benefits-number {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.advantages__services {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.advantages__block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+
+    &--triple {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

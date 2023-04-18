@@ -1,0 +1,95 @@
+//повторяющиеся стили на разных страницах
+
+.main__preview {
+  background-image: url("../img/logo/background-index.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 389px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__preview-logo {
+  background-image: url("../img/logo/background-preview.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__block {
+  padding: 35px 10px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 445px;
+    // padding: 56px 125px;
+    margin: 0 auto;
+  }
+}
+
+.block__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 20px 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.block__title--big {
+  font-size: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.block__text {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 20px 0;
+  margin: 0;
+}
+//кнопка поиска гостиниц
+.block__find {
+  text-decoration: none;
+  padding: 15px 50px;
+  background-color: $blue;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 120px;
+  }
+}
+
+.block__finds-link {
+  padding: 32px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 0;
+  }
+}
+
+//video
+.block__preview {
+  @media (min-width: $tablet-width) {
+    height: 500px;
+    width: 648px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 500px;
+    width: 800px;
+  }
+}

@@ -1,0 +1,9 @@
+.textarea__textarea {
+  font-family: $font;
+  border: 0;
+  width: 100%;
+  background-color: $gray;
+  resize: vertical;
+  min-width: 100px;
+  min-height: 100px;
+}

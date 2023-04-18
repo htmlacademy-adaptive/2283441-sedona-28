@@ -1,15 +1,33 @@
 // базовые стили
+@import "./base/variables.scss";
 @import "./base/fonts.scss";
 @import "./base/base.scss";
+@import "./base/utils.scss";
 
 // стили для шапки
-@import "./blocks/heder/heder__nav.scss";
+@import "./blocks/header__nav.scss";
+@import "./blocks/header.scss";
+@import "./blocks/site-list.scss";
 
 // стили для main
-@import "./blocks/main/overall.scss";
-@import "./blocks/main/main__causes.scss";
-@import "./blocks/main/main__photo.scss";
-@import "./blocks/main/form.scss";
+@import "./blocks/overall.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/services.scss";
+@import "./blocks/list.scss";
+@import "./blocks/advantages__img-wrapper.scss";
+@import "./blocks/causes__advantages.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/like.scss";
+@import "./blocks/main.scss";
+@import "./blocks/picture.scss";
+@import "./blocks/form.scss";
+@import "./blocks/form__text.scss";
+@import "./blocks/form__info.scss";
+@import "./blocks/form__radio.scss";
+@import "./blocks/form__checkbox.scss";
+@import "./blocks/form__textarea.scss";
+@import "./blocks/form__button.scss";
 
 //стили для подвала
-@import "./blocks/footer/footer.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
