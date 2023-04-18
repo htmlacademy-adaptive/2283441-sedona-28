@@ -481,6 +481,7 @@ body {
 
 .fieldset {
   margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -498,7 +499,6 @@ body {
 .form__checkbox,
 .form__textarea,
 .form__button {
-  padding: 0 40px;
   margin-bottom: 60px;
 }
 
@@ -514,9 +514,11 @@ body {
 
 .text__input {
   font-family: "PT Sans", "Roboto";
+  width: 280px;
   height: 58px;
   border: none;
   padding: 16px;
+  padding-right: 0;
   background-color: #eeeeee;
   color: #000000;
   font-weight: 700;
