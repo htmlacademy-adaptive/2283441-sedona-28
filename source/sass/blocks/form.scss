@@ -10,6 +10,8 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .form__text,
@@ -19,4 +21,22 @@
 .form__textarea,
 .form__button {
   margin-bottom: 60px;
+}
+
+.form {
+  width: 100%;
+}
+
+.fieldset--block {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.form__block {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 }
