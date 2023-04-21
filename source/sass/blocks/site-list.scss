@@ -1,6 +1,6 @@
 // обертка(li)
 .site-list__item {
-  padding: 15px 0;
+  padding: 0;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
@@ -12,10 +12,13 @@
 .site-list__link {
   color: $white;
   text-decoration: none;
-  padding: 5px 0;
+  padding: 15px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  display: block;
+  width: 100%;
+  height: 100%;
 
   @media (min-width: $tablet-width) {
     color: $black;

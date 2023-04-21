@@ -91,7 +91,8 @@
   }
 
   .header__nav--nojs .nav__list {
-    position: static;
+    position: absolute;
+    top: -224px;
     background-color: $blue;
     width: 100%;
   }

@@ -1,6 +1,16 @@
 .header {
   position: relative;
   min-height: 56px;
+  display: flex;
+  flex-direction: column;
+
+  &--nojs {
+    margin-top: 220px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+  }
 }
 
 .header__logo {
