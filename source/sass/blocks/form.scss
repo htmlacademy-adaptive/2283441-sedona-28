@@ -12,6 +12,7 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .form__text,
@@ -29,7 +30,7 @@
 
 .fieldset--block {
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 80%;
   }
 }
 
@@ -38,5 +39,56 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    position: relative;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__block::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 338px;
+    background-color: $darkGray;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset__title--line::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 123px;
+    background-color: $darkGray;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  .fieldset__title--line::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 123px;
+    background-color: $darkGray;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset__title--line::after {
+    width: 280px;
+  }
+
+  .fieldset__title--line::before {
+    width: 280px;
   }
 }
