@@ -63,18 +63,35 @@
   padding: 15px 50px;
   background-color: $blue;
   color: $white;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 120px;
+    padding: 15px 110px;
   }
 }
 
 .block__finds-link {
-  padding: 32px 0;
+  margin: 30px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 0;
+    margin: 50px 0;
   }
+}
+
+.block__find:hover {
+  background-color: #669ec0;
+  cursor: pointer;
+}
+
+.block__find:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.block__find:disabled {
+  background-color: #e5e5e5;
 }
 
 //video

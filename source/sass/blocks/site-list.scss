@@ -12,7 +12,7 @@
 .site-list__link {
   color: $white;
   text-decoration: none;
-  padding: 15px 0;
+  padding: 15px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -30,5 +30,28 @@
 .site-list__link--active {
   @media (min-width: $tablet-width) {
     color: $brown;
+  }
+}
+
+@media (max-width: $mobail-width) {
+  .site-list__link:hover {
+    background-color: #669ec0;
+    cursor: pointer;
+  }
+
+  .site-list__link:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link:hover {
+    color: #81b3d2;
+    cursor: pointer;
+  }
+
+  .site-list__link:active {
+    color: rgba(0, 0, 0, 1);
   }
 }

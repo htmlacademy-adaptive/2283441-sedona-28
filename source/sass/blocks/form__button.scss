@@ -6,4 +6,38 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (max-width: $mobail-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.button__field {
+  font-size: 12px;
+  line-height: 21px;
+  text-align: end;
+}
+
+.form__button {
+  position: relative;
+}
+
+.button__control:hover {
+  background-color: #669ec0;
+  cursor: pointer;
+}
+
+.button__control:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.button__control:disabled {
+  background-color: #e5e5e5;
+  cursor: none;
 }

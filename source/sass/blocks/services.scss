@@ -11,3 +11,23 @@
     align-items: center;
   }
 }
+
+.list__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 8px 7px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.list__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 8px 7px;
+}
