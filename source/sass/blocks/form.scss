@@ -2,6 +2,22 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100vw;
+      top: -30px;
+      left: -20px;
+      right: 0;
+      bottom: 0;
+      background-color: #e5e5e5;
+    }
+  }
 }
 
 .fieldset__title {

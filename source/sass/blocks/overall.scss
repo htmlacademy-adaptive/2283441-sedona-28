@@ -109,3 +109,23 @@
     width: 800px;
   }
 }
+
+.main__block--line {
+  @media (max-width: $mobile-width) {
+    position: relative;
+    padding: 0;
+    padding-bottom: 38px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100vw;
+      top: -10px;
+      left: -20px;
+      right: 0;
+      bottom: 0;
+      background-color: #e5e5e5;
+    }
+  }
+}
