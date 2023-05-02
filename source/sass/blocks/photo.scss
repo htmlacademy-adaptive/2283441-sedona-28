@@ -12,6 +12,23 @@
 }
 
 .photo__picture {
+  @media (max-width: $mobile-width) {
+    position: relative;
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100vw;
+      top: -25px;
+      left: -20px;
+      right: 0;
+      bottom: 0;
+      background-color: #e5e5e5;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;

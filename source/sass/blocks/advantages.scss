@@ -1,7 +1,6 @@
 .advantages__article {
   margin: 0;
   padding: 35px 20px;
-  box-sizing: border-box;
   min-height: 256px;
 
   &--bg-blue {
@@ -56,6 +55,24 @@
     &--triple {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.advantages__article--line {
+  @media (max-width: $mobile-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 284px;
+      top: 0;
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+      background-color: #000000;
     }
   }
 }

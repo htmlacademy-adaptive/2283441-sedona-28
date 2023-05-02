@@ -1,6 +1,6 @@
 //comment
-@media (min-width: $tablet-width) {
-  .causes__advantages {
+.causes__advantages {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }

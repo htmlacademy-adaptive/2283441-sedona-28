@@ -10,28 +10,26 @@
   <body class="body">
     <div class="container">
       <h1 class="visually-hidden">Городок Седона</h1>
-      <header class="header">
+      <header class="header header--nojs">
         <a class="header__logo" href="index.html">
           <img class="header__logo-image" src="./img/logo/logo.png" width="185" height="95" alt="Логотип Седона." />
         </a>
-        <nav class="header__nav nav">
+        <nav class="header__nav header__nav--nojs nav">
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="nav__wrapper">
-            <ul class="nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html"> Главная </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html"> фото и видео </a>
-              </li>
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link"> форма отзыва </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru" target="_blank"> HTML Academy </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html"> Главная </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html"> фото и видео </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active"> форма отзыва </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru" target="_blank"> HTML Academy </a>
+            </li>
+          </ul>
         </nav>
       </header>
 
@@ -89,7 +87,7 @@
             </div>
 
             <fieldset class="form__radio fieldset radio">
-              <h3 class="fieldset__title">Ваше Общее Впечатление:</h3>
+              <h3 class="fieldset__title fieldset__title--line">Ваше Общее Впечатление:</h3>
               <div class="radio__block">
                 <label class="radio__label">
                   <input class="radio__input" type="radio" name="impression" value="Скорее положительное" checked />
@@ -107,7 +105,7 @@
             </fieldset>
 
             <fieldset class="form__checkbox fieldset checkbox">
-              <h3 class="fieldset__title">посещенные достопримечательности:</h3>
+              <h3 class="fieldset__title fieldset__title--line">посещенные<br />достопримечательности:</h3>
               <div class="checkbox__block">
                 <label class="checkbox__label">
                   <input class="checkbox__input" type="checkbox" name="attractions" value="Мост Дьявола" checked />
@@ -129,7 +127,7 @@
             </fieldset>
 
             <fieldset class="form__textarea fieldset textarea">
-              <h3 class="fieldset__title">Опишите свои эмоции:</h3>
+              <h3 class="fieldset__title fieldset__title--line">Опишите свои эмоции:</h3>
               <label class="textarea__comment">
                 <textarea class="textarea__textarea" name="comment" rows="10" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
@@ -144,24 +142,26 @@
       </main>
 
       <footer class="footer">
-        <p class="footer__hashtag">#visitSEDONA</p>
+        <div class="footer__block">
+          <p class="footer__hashtag">#visitSEDONA</p>
 
-        <div class="footer__social social">
-          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-          <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
-            <span class="visually-hidden">Телеграмм</span>
-          </a>
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-            <span class="visually-hidden">Ютуб</span>
+          <div class="footer__social social">
+            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+            <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
+              <span class="visually-hidden">Телеграмм</span>
+            </a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </div>
+
+          <a class="footer__copyright copyright" href="https://htmlacademy.ru/" target="_blank">
+            <p class="copyright__text">разработано</p>
+            <span class="visually-hidden">HTMLacademy</span>
           </a>
         </div>
-
-        <a class="footer__copyright copyright" href="https://htmlacademy.ru/" target="_blank">
-          <p class="copyright__text">разработано</p>
-          <span class="visually-hidden">HTMLacademy</span>
-        </a>
       </footer>
 
       <!--окна отправки отзыва-->

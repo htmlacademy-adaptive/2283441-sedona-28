@@ -10,15 +10,15 @@
   <body class="body">
     <div class="container">
       <h1 class="visually-hidden">Городок Седона</h1>
-      <header class="header">
-        <a class="header__logo" href="index.html">
+      <header class="header header--nojs">
+        <a class="header__logo">
           <img class="header__logo-image" src="./img/logo/logo.png" width="185" height="95" alt="Логотип Седона." />
         </a>
-        <nav class="header__nav nav">
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="header__nav header__nav--closed header__nav--nojs nav">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link"> Главная </a>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active"> Главная </a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html"> фото и видео </a>
@@ -101,14 +101,14 @@
               </div>
 
               <!--четвертая причина -->
-              <div class="advantages__article advantages__article--bg-grey">
+              <div class="advantages__article advantages__article--line advantages__article--bg-grey">
                 <h2 class="advantages__title">КРАСИВАЯ ДОРОГА</h2>
                 <span class="benefits-number">— №4 —</span>
                 <p class="advantages__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
               </div>
 
               <!--пятая причина -->
-              <div class="advantages__article advantages__article--bg-grey">
+              <div class="advantages__article advantages__article--line advantages__article--bg-grey">
                 <h2 class="advantages__title">МАЛО ТУРИСТОВ</h2>
                 <span class="advantages__benefits-number">— №5 —</span>
                 <p class="advantages__text">Большинство едет в гранд каньони толпится там</p>
@@ -121,7 +121,7 @@
           <h2 class="block__title block__title--big">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="block__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
           <div class="block__finds-link">
-            <a href="#" class="block__find">Найти Гостиницу</a>
+            <a href="form.html" class="block__find">Найти Гостиницу</a>
           </div>
         </div>
 
@@ -131,25 +131,28 @@
       </main>
 
       <footer class="footer">
-        <p class="footer__hashtag">#visitSEDONA</p>
+        <div class="footer__block">
+          <p class="footer__hashtag">#visitSEDONA</p>
 
-        <div class="footer__social social">
-          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-          <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
-            <span class="visually-hidden">Телеграмм</span>
-          </a>
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-            <span class="visually-hidden">Ютуб</span>
+          <div class="footer__social social">
+            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+            <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
+              <span class="visually-hidden">Телеграмм</span>
+            </a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </div>
+
+          <a class="footer__copyright copyright" href="https://htmlacademy.ru/" target="_blank">
+            <p class="copyright__text">разработано</p>
+            <span class="visually-hidden">HTMLacademy</span>
           </a>
         </div>
-
-        <a class="footer__copyright copyright" href="https://htmlacademy.ru/" target="_blank">
-          <p class="copyright__text">разработано</p>
-          <span class="visually-hidden">HTMLacademy</span>
-        </a>
       </footer>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
