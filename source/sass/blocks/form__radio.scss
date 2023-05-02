@@ -21,3 +21,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.radio__input {
+  margin: 0;
+  cursor: pointer;
+  height: 46px;
+  width: 46px;
+}
