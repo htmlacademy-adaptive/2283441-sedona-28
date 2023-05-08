@@ -131,6 +131,19 @@
   align-items: center;
 }
 
+.block__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.block__button {
+  position: absolute;
+  z-index: 1;
+}
+
 .main__block--line {
   @media (max-width: $mobile-width) {
     position: relative;

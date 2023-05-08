@@ -22,9 +22,39 @@
   }
 }
 
-.radio__input {
-  margin: 0;
+.radio__label {
   cursor: pointer;
-  height: 46px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.radio__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio__label::before {
+  content: "";
   width: 46px;
+  height: 46px;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: #f2f2f2;
+}
+
+.radio__input[type="radio"]:checked + .radio__text::after {
+  position: absolute;
+  content: "";
+  left: 16px;
+  top: 16px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
 }
