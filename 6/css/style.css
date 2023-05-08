@@ -383,6 +383,19 @@ body {
   align-items: center;
 }
 
+.block__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.block__button {
+  position: absolute;
+  z-index: 1;
+}
+
 @media (max-width: 767px) {
   .main__block--line {
     position: relative;
@@ -468,12 +481,12 @@ body {
     content: "";
     position: absolute;
     height: 1px;
-    width: 284px;
+    width: calc(100% - 40px);
     top: 0;
     left: 20px;
     right: 20px;
     bottom: 0;
-    background-color: #000000;
+    background-color: #d6d6d6;
   }
 }
 
@@ -848,11 +861,41 @@ body {
   }
 }
 
-.radio__input {
-  margin: 0;
+.radio__label {
   cursor: pointer;
-  height: 46px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.radio__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio__label::before {
+  content: "";
   width: 46px;
+  height: 46px;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: #f2f2f2;
+}
+
+.radio__input[type=radio]:checked + .radio__text::after {
+  position: absolute;
+  content: "";
+  left: 16px;
+  top: 16px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
 }
 
 .checkbox__text {
@@ -879,6 +922,44 @@ body {
   .checkbox__block {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.checkbox__label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.checkbox__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox__label::before {
+  content: "";
+  width: 46px;
+  height: 46px;
+  border: 1px solid #adb5bd;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: #f2f2f2;
+}
+
+.checkbox__input[type=checkbox]:checked + .checkbox__text::after {
+  position: absolute;
+  content: "";
+  bottom: 20px;
+  left: 12px;
+  width: 22px;
+  height: 12px;
+  border: solid #333333;
+  border-width: 0 0 3px 3px;
+  transform: rotate(-45deg);
 }
 
 .textarea__textarea {
