@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico" />
+    <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/Path.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -35,7 +38,10 @@
 
       <main class="main">
         <div class="main__preview">
-          <img src="./img/logo/text-index.png" width="280" height="215" alt="Седона." />
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/logo/text-index-tablet.png 1x, ./img/logo/text-index-tablet.png 2x" width="461" height="350" />
+            <img src="./img/logo/text-index.png" width="280" height="215" srcset="./img/logo/text-index2x.png" alt="Седона." />
+          </picture>
         </div>
         <div class="main__block block">
           <h2 class="block__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
@@ -52,7 +58,27 @@
                 <p class="advantages__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
               <div class="advantages__img-wrapper">
-                <img src="./img/picture/photo-city-mobile.jpg" width="320" height="260" alt="Городок Седона." />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./img/picture/photo-city-desktop.jpg 1x, ./img/picture/photo-city-desktop2x.jpg 2x"
+                    width="800"
+                    height="256"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./img/picture/photo-city-tablet.jpg 1x, ./img/picture/photo-city-tablet2x.jpg 2x"
+                    width="512"
+                    height="256"
+                  />
+                  <img
+                    src="./img/picture/photo-city-mobile.jpg"
+                    width="320"
+                    height="260"
+                    srcset="./img/picture/photo-city-mobile2x.jpg"
+                    alt="Городок Седона."
+                  />
+                </picture>
               </div>
             </div>
             <div class="advantages__block advantages__block--triple services">
@@ -89,7 +115,27 @@
                 <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="advantages__img-wrapper">
-                <img src="./img/picture/photo-bridge-mobile.jpg" width="320" height="260" alt="Мост Дьявола." />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./img/picture/photo-bridge-desktop.jpg 1x, ./img/picture/photo-bridge-desktop2x.jpg 2x"
+                    width="800"
+                    height="256"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./img/picture/photo-bridge-tablet.jpg 1x, ./img/picture/photo-bridge-tablet2x.jpg 2x"
+                    width="512"
+                    height="256"
+                  />
+                  <img
+                    src="./img/picture/photo-bridge-mobile.jpg"
+                    width="320"
+                    height="260"
+                    srcset="./img/picture/photo-bridge-mobile2x.jpg"
+                    alt="Мост Дьявола."
+                  />
+                </picture>
               </div>
             </div>
             <!-- третья причина-->
@@ -126,7 +172,17 @@
         </div>
 
         <div class="main__map">
-          <img src="./img/picture/map-mobile.jpg" width="320" height="350" alt="Местополежение Седоны на карте Аризоны." />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/picture/map-desktop.jpg 1x, ./img/picture/map-desktop2x.jpg 2x" width="1200" height="350" />
+            <source media="(min-width: 768px)" srcset="./img/picture/map-tablet.jpg 1x, ./img/picture/map-tablet2x.jpg 2x" width="768" height="350" />
+            <img
+              src="./img/picture/map-mobile.jpg"
+              srcset="./img/picture/map-mobile2x.jpg"
+              width="320"
+              height="350"
+              alt="Местополежение Седоны на карте Аризоны."
+            />
+          </picture>
         </div>
       </main>
 

@@ -67,12 +67,12 @@
       content: "";
       position: absolute;
       height: 1px;
-      width: 284px;
+      width: calc(100% - 40px);
       top: 0;
       left: 20px;
       right: 20px;
       bottom: 0;
-      background-color: #000000;
+      background-color: #d6d6d6;
     }
   }
 }
