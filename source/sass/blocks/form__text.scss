@@ -21,4 +21,19 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  cursor: pointer;
+}
+
+.text__input::placeholder {
+  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.text__input:hover {
+  background-color: #e5e5e5;
+}
+
+.text__input:active {
+  background-color: $white;
+  border: 4px solid #e5e5e5;
 }

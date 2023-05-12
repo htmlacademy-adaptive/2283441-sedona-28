@@ -4,6 +4,7 @@
 }
 
 .info__input {
+  position: relative;
   font-family: $font;
   width: 100%;
   height: 58px;
@@ -15,10 +16,60 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  cursor: pointer;
 }
 
 .info__label {
   font-size: 14px;
   line-height: 21px;
   padding-left: 10px;
+}
+
+.info__section--icons-tel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  top: 70px;
+  right: 50px;
+
+  @media (max-width: $mobile-width) {
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 33px;
+  }
+}
+
+.info__section--icons-email {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  top: 167px;
+  right: 50px;
+
+  @media (max-width: $mobile-width) {
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 33px;
+  }
+}
+
+.info__input::placeholder {
+  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.info__input:hover {
+  background-color: #e5e5e5;
 }

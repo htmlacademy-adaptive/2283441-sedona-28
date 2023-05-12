@@ -58,3 +58,11 @@
   background-color: #333333;
   border-radius: 50%;
 }
+
+.radio__input[type="radio"]:hover + .radio__label::before {
+  background-color: #e5e5e5;
+}
+
+.radio__input:active {
+  background-color: #d5d5d5;
+}

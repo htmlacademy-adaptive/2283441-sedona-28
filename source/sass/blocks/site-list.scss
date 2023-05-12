@@ -27,9 +27,14 @@
   }
 }
 
-.site-list__link--active {
+.site-list__link.site-list__link--active {
   @media (min-width: $tablet-width) {
     color: $brown;
+
+    &:hover {
+      color: $brown;
+      cursor: default;
+    }
   }
 }
 
