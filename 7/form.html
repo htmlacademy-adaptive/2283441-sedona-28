@@ -61,108 +61,118 @@
 
           <form class="form" method="post" action="https://echo.htmlacademy.ru/courses">
             <div class="form__block">
-              <fieldset class="form__text fieldset text fieldset--block">
+              <fieldset class="form__fieldset fieldset fieldset--block">
                 <h3 class="fieldset__title">Представьтесь:</h3>
-                <div class="text__section">
-                  <label class="text__label" for="name">ИМЯ*:</label>
-                  <div class="">
-                    <input class="text__input" type="text" name="name" value="Пётр" />
+                <div class="fieldset__list">
+                  <div class="input-text">
+                    <label class="input-text__label" for="name">ИМЯ*:</label>
+                    <div class="input-text__wrapper">
+                      <input class="input-text__input" type="text" name="name" value="Пётр" />
+                    </div>
                   </div>
-                </div>
-                <div class="text__section">
-                  <label class="text__label" for="surname">ФАМИЛИЯ*:</label>
-                  <div class="">
-                    <input class="text__input" type="text" name="surname" value="Пустота" />
+                  <div class="input-text">
+                    <label class="input-text__label" for="surname">ФАМИЛИЯ*:</label>
+                    <div class="input-text__wrapper">
+                      <input class="input-text__input" type="text" name="surname" value="Пустота" />
+                    </div>
                   </div>
-                </div>
-                <div class="text__section">
-                  <label class="text__label" for="patronymic">Отчество:</label>
-                  <div class="">
-                    <input class="text__input" type="text" name="patronymic" value="Викторович" />
+                  <div class="input-text">
+                    <label class="input-text__label" for="patronymic">Отчество:</label>
+                    <div class="input-text__wrapper">
+                      <input class="input-text__input" type="text" name="patronymic" value="Викторович" />
+                    </div>
                   </div>
                 </div>
               </fieldset>
 
-              <fieldset class="form__info fieldset info fieldset--block">
+              <fieldset class="form__fieldset fieldset fieldset--block">
                 <h3 class="fieldset__title">Контактная информация:</h3>
-                <div class="info__section">
-                  <label class="info__label" for="tel">Контактный телефон*:</label>
-                  <div class="">
-                    <input class="info__input" type="tel" name="tel" placeholder="Введите телефон" />
-                    <span class="info__section info__section--icons-tel">
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
-                          fill="#010101"
-                        />
-                      </svg>
-                      <span class="visually-hidden">иконка</span>
-                    </span>
+                <div class="fieldset__list">
+                  <div class="input-info">
+                    <label class="input-info__label" for="tel">Контактный телефон*:</label>
+                    <div class="input-info__wrapper">
+                      <input class="input-info__input" type="tel" name="tel" placeholder="Введите телефон" />
+                      <span class="input-info__section input-info__section--icons-tel">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
+                            fill="#010101"
+                          />
+                        </svg>
+                        <span class="visually-hidden">иконка</span>
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div class="info__section">
-                  <label class="info__label" for="email">Электронная почта*:</label>
-                  <div class="">
-                    <input class="info__input" type="email" name="email" placeholder="Введите e-mail" />
-                    <span class="info__section info__section--icons-email">
-                      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
-                          fill="black"
-                        />
-                      </svg>
-                      <span class="visually-hidden">иконка</span>
-                    </span>
+                  <div class="input-info">
+                    <label class="input-info__label" for="email">Электронная почта*:</label>
+                    <div class="input-info__wrapper">
+                      <input class="input-info__input" type="email" name="email" placeholder="Введите e-mail" />
+                      <span class="input-info__section input-info__section--icons-email">
+                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
+                            fill="black"
+                          />
+                        </svg>
+                        <span class="visually-hidden">иконка</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </fieldset>
             </div>
 
-            <fieldset class="form__radio fieldset radio">
+            <fieldset class="form__fieldset fieldset radio">
               <h3 class="fieldset__title fieldset__title--line">Ваше Общее Впечатление:</h3>
-              <div class="radio__block">
-                <label class="radio__label">
-                  <input class="radio__input" type="radio" name="impression" value="Скорее положительное" checked />
-                  <span class="radio__text">Скорее положительное</span>
-                </label>
-                <label class="radio__label">
-                  <input class="radio__input" type="radio" name="impression" value="Скорее отрицательное" />
-                  <span class="radio__text">Скорее отрицательное</span>
-                </label>
-                <label class="radio__label">
-                  <input class="radio__input" type="radio" name="impression" value="Затрудняюсь ответить" />
-                  <span class="radio__text">Затрудняюсь ответить</span>
-                </label>
+              <div class="fieldset__list">
+                <div class="radio__block">
+                  <label class="radio__label">
+                    <input class="radio__input" type="radio" name="impression" value="Скорее положительное" checked />
+                    <span class="radio__text">Скорее положительное</span>
+                  </label>
+                  <label class="radio__label">
+                    <input class="radio__input" type="radio" name="impression" value="Скорее отрицательное" />
+                    <span class="radio__text">Скорее отрицательное</span>
+                  </label>
+                  <label class="radio__label">
+                    <input class="radio__input" type="radio" name="impression" value="Затрудняюсь ответить" />
+                    <span class="radio__text">Затрудняюсь ответить</span>
+                  </label>
+                </div>
               </div>
             </fieldset>
 
-            <fieldset class="form__checkbox fieldset checkbox">
+            <fieldset class="form__fieldset fieldset checkbox">
               <h3 class="fieldset__title fieldset__title--line">посещенные<br />достопримечательности:</h3>
-              <div class="checkbox__block">
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox" name="attractions" value="Мост Дьявола" checked />
-                  <span class="checkbox__text">Мост Дьявола</span>
-                </label>
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox" name="attractions" value="Гора-Колокол" checked />
-                  <span class="checkbox__text">Гора-Колокол</span>
-                </label>
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox" name="attractions" value="Слайд-парк" checked />
-                  <span class="checkbox__text">Слайд-парк</span>
-                </label>
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox" name="attractions" value="Красные скалы" />
-                  <span class="checkbox__text">Красные скалы</span>
-                </label>
+              <div class="fieldset__list">
+                <div class="checkbox__block">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" type="checkbox" name="attractions" value="Мост Дьявола" checked />
+                    <span class="checkbox__text">Мост Дьявола</span>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" type="checkbox" name="attractions" value="Гора-Колокол" checked />
+                    <span class="checkbox__text">Гора-Колокол</span>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" type="checkbox" name="attractions" value="Слайд-парк" checked />
+                    <span class="checkbox__text">Слайд-парк</span>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" type="checkbox" name="attractions" value="Красные скалы" />
+                    <span class="checkbox__text">Красные скалы</span>
+                  </label>
+                </div>
               </div>
             </fieldset>
 
-            <fieldset class="form__textarea fieldset textarea">
+            <fieldset class="form__fieldset fieldset textarea">
               <h3 class="fieldset__title fieldset__title--line">Опишите свои эмоции:</h3>
-              <label class="textarea__comment">
-                <textarea class="textarea__textarea" name="comment" rows="10" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
-              </label>
+              <div class="fieldset__list">
+                <label class="textarea__comment">
+                  <textarea class="textarea__textarea" name="comment" rows="10" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
+                </label>
+              </div>
             </fieldset>
 
             <div class="form__button button">
