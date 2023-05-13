@@ -31,3 +31,11 @@
   margin: 0;
   padding: 8px 7px;
 }
+
+.list-icon {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 60px;
+    margin-bottom: 26px;
+  }
+}

@@ -1,5 +1,6 @@
 //повторяющиеся стили на разных страницах
 
+//приветствие
 .main__preview {
   position: relative;
   z-index: -1;
@@ -68,6 +69,7 @@
   }
 }
 
+//пролог
 .main__block {
   padding: 35px 10px;
 
@@ -103,6 +105,7 @@
   padding: 20px 0;
   margin: 0;
 }
+
 //кнопка поиска гостиниц
 .block__find {
   text-decoration: none;
@@ -138,26 +141,6 @@
 
 .block__find:disabled {
   background-color: #e5e5e5;
-}
-
-//video
-.block__video {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.block__preview {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.block__button {
-  position: absolute;
-  z-index: 1;
 }
 
 .main__block--line {

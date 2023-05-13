@@ -1,0 +1,19 @@
+//video
+.block-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.video-button {
+  position: absolute;
+  z-index: 1;
+}

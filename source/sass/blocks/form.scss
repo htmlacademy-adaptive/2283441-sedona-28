@@ -29,14 +29,13 @@
   display: flex;
   justify-content: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
-.form__text,
-.form__info,
-.form__radio,
-.form__checkbox,
-.form__textarea,
-.form__button {
+.form__fieldset {
   margin-bottom: 60px;
 }
 
