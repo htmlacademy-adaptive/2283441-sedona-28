@@ -3,7 +3,6 @@
 //приветствие
 .main__preview {
   position: relative;
-  z-index: -1;
   background-image: url("../img/logo/background-index.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -60,7 +59,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/logo/background-preview-tablet.png");
-    min-height: 518px;
+    min-height: 290px;
     background-position: top;
 
     @media (min-resolution: 2dppx) {
