@@ -10,6 +10,7 @@
   background-color: $blue;
   min-height: 389px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
@@ -35,14 +36,13 @@
   bottom: -1px;
 }
 
-.main__preview-triangle__size {
+.main__preview-triangle-size {
   width: 100%;
   height: 57px;
 }
 
 .main__preview-logo {
   position: relative;
-  z-index: -1;
   background-image: url("../img/logo/background-preview.png");
   background-repeat: no-repeat;
   background-position: center center;

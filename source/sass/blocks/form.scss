@@ -41,6 +41,7 @@
 
 .form {
   width: 100%;
+  padding-bottom: 60px;
 }
 
 .fieldset--block {
@@ -64,7 +65,7 @@
     content: "";
     position: absolute;
     width: 1px;
-    height: 338px;
+    height: 85%;
     background-color: $darkGray;
     background-repeat: no-repeat;
     top: 0;

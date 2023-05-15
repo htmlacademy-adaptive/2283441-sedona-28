@@ -16,16 +16,14 @@
   border: none;
   padding: 16px;
   background-color: $gray;
-  color: #000000;
+  color: $black;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
-  cursor: pointer;
 }
 
 .input-text__input::placeholder {
-  background-color: #f2f2f2;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -33,7 +31,7 @@
   background-color: #e5e5e5;
 }
 
-.input-text__input:active {
+.input-text__input:focus {
   background-color: $white;
   border: 4px solid #e5e5e5;
 }

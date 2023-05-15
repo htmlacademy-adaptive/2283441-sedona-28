@@ -3,13 +3,11 @@
   border: 0;
   width: 100%;
   background-color: $gray;
-  resize: vertical;
-  min-width: 100px;
-  min-height: 100px;
+  resize: none;
+  height: 160px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   padding: 16px;
   color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
 }
