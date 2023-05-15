@@ -50,7 +50,7 @@
           </picture>
           <div class="main__preview-triangle">
             <source media="(min-width: 768px)" srcset="./img/logo/background-index-tablet.svg" />
-            <img class="main__preview-triangle__size" src="./img/logo/background-index.svg" width="320" height="57" alt="Декоративный элемент." />
+            <img class="main__preview-triangle-size" src="./img/logo/background-index.svg" width="320" height="57" alt="Декоративный элемент." />
           </div>
         </div>
         <div class="main__block block">
@@ -61,7 +61,7 @@
         <div class="main__concontainer">
           <section class="main__photo photo">
             <article class="photo__picture picture picture--big">
-              <div class="picture__scenery scenery">
+              <a class="picture__scenery scenery">
                 <picture>
                   <source
                     media="(min-width: 1200px)"
@@ -84,7 +84,7 @@
                     alt="пейзаж гор на закате."
                   />
                 </picture>
-              </div>
+              </a>
               <div class="picture__block">
                 <div class="picture__sign">
                   <b class="picture__description">неродные просторы</b>
@@ -104,146 +104,144 @@
               </div>
             </article>
 
-            <div class="photo__block">
-              <article class="photo__picture picture">
-                <div class="picture__scenery scenery">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img/picture/photo-2-desktop.jpg 1x, ./img/picture/photo-2-desktop2x.jpg 2x"
-                      width="400"
-                      height="267"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img/picture/photo-2-tablet.jpg 1x, ./img/picture/photo-2-tablet2x.jpg 2x"
-                      width="324"
-                      height="267"
-                    />
-                    <img
-                      class="scenery__cover"
-                      src="./img/picture/photo-2-mobile.jpg"
-                      width="280"
-                      height="280"
-                      srcset="./img/picture/photo-2-mobile2x.jpg"
-                      alt="кактусы на фоне гор."
-                    />
-                  </picture>
+            <article class="photo__picture picture">
+              <a class="picture__scenery scenery">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./img/picture/photo-2-desktop.jpg 1x, ./img/picture/photo-2-desktop2x.jpg 2x"
+                    width="400"
+                    height="267"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./img/picture/photo-2-tablet.jpg 1x, ./img/picture/photo-2-tablet2x.jpg 2x"
+                    width="324"
+                    height="267"
+                  />
+                  <img
+                    class="scenery__cover"
+                    src="./img/picture/photo-2-mobile.jpg"
+                    width="280"
+                    height="280"
+                    srcset="./img/picture/photo-2-mobile2x.jpg"
+                    alt="кактусы на фоне гор."
+                  />
+                </picture>
+              </a>
+              <div class="picture__block">
+                <div class="picture__sign">
+                  <b class="picture__description">Местная растительность</b>
+                  <p class="picture__name">Автор фото: Сергей</p>
                 </div>
-                <div class="picture__block">
-                  <div class="picture__sign">
-                    <b class="picture__description">Местная растительность</b>
-                    <p class="picture__name">Автор фото: Сергей</p>
-                  </div>
-                  <div class="picture__like like">
-                    <a class="like__element" href="#">
-                      <svg class="like__element-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                        />
-                      </svg>
-                      <span class="visually-hidden">Лайк</span>
-                      <span class="like__count">143</span>
-                    </a>
-                  </div>
+                <div class="picture__like like">
+                  <a class="like__element" href="#">
+                    <svg class="like__element-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Лайк</span>
+                    <span class="like__count">143</span>
+                  </a>
                 </div>
-              </article>
+              </div>
+            </article>
 
-              <article class="photo__picture picture">
-                <div class="picture__scenery scenery">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img/picture/photo-3-desktop.jpg 1x, ./img/picture/photo-3-desktop2x.jpg 2x"
-                      width="400"
-                      height="267"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img/picture/photo-3-tablet.jpg 1x, ./img/picture/photo-3-tablet2x.jpg 2x"
-                      width="324"
-                      height="267"
-                    />
-                    <img
-                      class="scenery__cover"
-                      src="./img/picture/photo-3-mobile.jpg"
-                      width="280"
-                      height="280"
-                      srcset="./img/picture/photo-3-mobile2x.jpg"
-                      alt="лесная дорога в горах."
-                    />
-                  </picture>
+            <article class="photo__picture picture">
+              <a class="picture__scenery scenery">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./img/picture/photo-3-desktop.jpg 1x, ./img/picture/photo-3-desktop2x.jpg 2x"
+                    width="400"
+                    height="267"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./img/picture/photo-3-tablet.jpg 1x, ./img/picture/photo-3-tablet2x.jpg 2x"
+                    width="324"
+                    height="267"
+                  />
+                  <img
+                    class="scenery__cover"
+                    src="./img/picture/photo-3-mobile.jpg"
+                    width="280"
+                    height="280"
+                    srcset="./img/picture/photo-3-mobile2x.jpg"
+                    alt="лесная дорога в горах."
+                  />
+                </picture>
+              </a>
+              <div class="picture__block picture__block--grey">
+                <div class="picture__sign">
+                  <b class="picture__description">Дорога на север</b>
+                  <p class="picture__name">Автор фото: Петр</p>
                 </div>
-                <div class="picture__block picture__block--grey">
-                  <div class="picture__sign">
-                    <b class="picture__description">Дорога на север</b>
-                    <p class="picture__name">Автор фото: Петр</p>
-                  </div>
-                  <div class="picture__like like">
-                    <a class="like__element" href="#">
-                      <svg class="like__element-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                        />
-                      </svg>
-                      <span class="visually-hidden">Лайк</span>
-                      <span class="like__count">96</span>
-                    </a>
-                  </div>
+                <div class="picture__like like">
+                  <a class="like__element" href="#">
+                    <svg class="like__element-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Лайк</span>
+                    <span class="like__count">96</span>
+                  </a>
                 </div>
-              </article>
+              </div>
+            </article>
 
-              <article class="photo__picture picture">
-                <div class="picture__scenery scenery">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img/picture/photo-4-desktop.jpg 1x, ./img/picture/photo-4-desktop2x.jpg 2x"
-                      width="400"
-                      height="267"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img/picture/photo-4-tablet.jpg 1x, ./img/picture/photo-4-tablet2x.jpg 2x"
-                      width="324"
-                      height="267"
-                    />
-                    <img
-                      class="scenery__cover"
-                      src="./img/picture/photo-4-mobile.jpg"
-                      width="280"
-                      height="280"
-                      srcset="./img/picture/photo-4-mobile2x.jpg"
-                      alt="каньон в горах."
-                    />
-                  </picture>
+            <article class="photo__picture picture">
+              <a class="picture__scenery scenery">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./img/picture/photo-4-desktop.jpg 1x, ./img/picture/photo-4-desktop2x.jpg 2x"
+                    width="400"
+                    height="267"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./img/picture/photo-4-tablet.jpg 1x, ./img/picture/photo-4-tablet2x.jpg 2x"
+                    width="324"
+                    height="267"
+                  />
+                  <img
+                    class="scenery__cover"
+                    src="./img/picture/photo-4-mobile.jpg"
+                    width="280"
+                    height="280"
+                    srcset="./img/picture/photo-4-mobile2x.jpg"
+                    alt="каньон в горах."
+                  />
+                </picture>
+              </a>
+              <div class="picture__block">
+                <div class="picture__sign">
+                  <b class="picture__description">Мост Дьявола</b>
+                  <p class="picture__name">Автор фото: Антон</p>
                 </div>
-                <div class="picture__block">
-                  <div class="picture__sign">
-                    <b class="picture__description">Мост Дьявола</b>
-                    <p class="picture__name">Автор фото: Антон</p>
-                  </div>
-                  <div class="picture__like like">
-                    <a class="like__element" href="#">
-                      <svg class="like__element-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                        />
-                      </svg>
-                      <span class="visually-hidden">Лайк</span>
-                      <span class="like__count">254</span>
-                    </a>
-                  </div>
+                <div class="picture__like like">
+                  <a class="like__element" href="#">
+                    <svg class="like__element-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Лайк</span>
+                    <span class="like__count">254</span>
+                  </a>
                 </div>
-              </article>
-            </div>
+              </div>
+            </article>
           </section>
 
           <div class="main__block main__block--line block">
             <h2 class="block__title block__title--big">Все еще сомневаетесь?</h2>
             <p class="block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             <a class="block-video video" href="https://www.youtube.com/watch?v=z5MB53EuRyE" target="_blank">
-              <div class="video-preview">
+              <div class="video__preview">
                 <picture>
                   <source
                     media="(min-width: 1200px)"
@@ -254,7 +252,7 @@
                   <source media="(min-width: 768px)" srcset="./img/picture/video-tablet.jpg 1x, ./img/picture/video-tablet2x.jpg 2x" width="648" height="500" />
                   <img src="./img/picture/video-mobile.jpg" width="280" height="177" srcset="./img/picture/video-mobile2x.jpg" alt="превью видеоролика." />
                 </picture>
-                <div class="video-button">
+                <div class="video__button">
                   <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7" />
                   </svg>
