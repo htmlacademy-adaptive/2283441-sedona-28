@@ -36,7 +36,9 @@
 }
 
 .form__fieldset {
-  margin-bottom: 60px;
+  @media (max-width: $mobile-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .form {
@@ -56,6 +58,7 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     position: relative;
+    margin-bottom: 60px;
   }
 }
 
@@ -65,7 +68,7 @@
     content: "";
     position: absolute;
     width: 1px;
-    height: 85%;
+    height: 100%;
     background-color: $darkGray;
     background-repeat: no-repeat;
     top: 0;

@@ -28,9 +28,10 @@
 .checkbox {
   cursor: pointer;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   margin-bottom: 30px;
+  height: 46px;
 }
 
 .checkbox__input {
@@ -53,7 +54,7 @@
   background-color: #f2f2f2;
 }
 
-.checkbox__text::after {
+:checked + .checkbox__text::after {
   position: absolute;
   content: "";
   bottom: 10px;
@@ -63,4 +64,21 @@
   border: solid #333333;
   border-width: 0 0 3px 3px;
   transform: rotate(-45deg);
+}
+
+.checkbox__text:hover {
+  &::before {
+    background-color: #e5e5e5;
+  }
+}
+
+.checkbox__text:active {
+  &::before {
+    background-color: #d5d5d5;
+  }
+
+  &::after {
+    border: solid rgba(51, 51, 51, 0.3);
+    border-width: 0 0 3px 3px;
+  }
 }

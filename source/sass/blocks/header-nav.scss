@@ -50,6 +50,20 @@
   box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue;
 }
 
+.nav__toggle:hover {
+  &::before,
+  &::after {
+    opacity: 0.6;
+  }
+}
+
+.nav__toggle:active {
+  &::before,
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 .header__nav--opened .nav__toggle {
   background-color: $blue;
 

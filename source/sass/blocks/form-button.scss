@@ -31,6 +31,10 @@
 
 .form__button {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
 
 .button__control:hover {
