@@ -14,3 +14,15 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('header__nav--opened');
   }
 });
+
+const activateMap = () => {
+  const image = document.querySelector('.map-block__img');
+  const iframe = document.querySelector('.main__map-iframe');
+
+  if (image && iframe) {
+    iframe.classList.remove('main__map-iframe--no-js');
+    image.classList.remove('map-block__img--no-js');
+  }
+}
+
+activateMap();
