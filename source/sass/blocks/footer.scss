@@ -37,11 +37,18 @@
 
 .footer__copyright:hover {
   color: $blue;
+
+  .copyright__icon {
+    fill: $blue;
+  }
 }
 
+.footer__copyright:active {
+  color: #b3b3b3;
 
-.copyright__icon:hover {
-  fill: $blue;
+  .copyright__icon {
+    fill: #b3b3b3;
+  }
 }
 
 .copyright__text {
