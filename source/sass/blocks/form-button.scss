@@ -21,10 +21,20 @@
   font-size: 12px;
   line-height: 21px;
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    top: 7px;
+  }
 }
 
 .form__button {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
 
 .button__control:hover {

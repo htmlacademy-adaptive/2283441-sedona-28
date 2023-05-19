@@ -1,5 +1,5 @@
 //coment
-.photo__block {
+.main__photo {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -27,12 +27,6 @@
       bottom: 0;
       background-color: #e5e5e5;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

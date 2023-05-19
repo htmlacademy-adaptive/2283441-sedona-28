@@ -29,19 +29,21 @@
   display: flex;
   justify-content: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
-.form__text,
-.form__info,
-.form__radio,
-.form__checkbox,
-.form__textarea,
-.form__button {
-  margin-bottom: 60px;
+.form__fieldset {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .form {
   width: 100%;
+  padding-bottom: 60px;
 }
 
 .fieldset--block {
@@ -56,6 +58,7 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     position: relative;
+    margin-bottom: 60px;
   }
 }
 
@@ -65,7 +68,7 @@
     content: "";
     position: absolute;
     width: 1px;
-    height: 338px;
+    height: 100%;
     background-color: $darkGray;
     background-repeat: no-repeat;
     top: 0;

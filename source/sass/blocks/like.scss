@@ -1,3 +1,23 @@
 .like__count {
   font-weight: 700;
+  margin-left: 10px;
+}
+
+.like__element {
+  text-decoration: none;
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.like__element-icon {
+  fill: $black;
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    fill: $white;
+    opacity: 1;
+  }
 }
