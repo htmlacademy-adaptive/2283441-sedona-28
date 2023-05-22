@@ -20,6 +20,20 @@
   }
 }
 
+.form__fieldset--block {
+  @media (max-width: $mobile-width) {
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 295px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
+}
+
 .fieldset__title {
   margin: 0;
   font-weight: 700;
