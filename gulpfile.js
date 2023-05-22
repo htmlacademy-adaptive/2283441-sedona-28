@@ -60,7 +60,15 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () => gulp.src(["source/img/logo/*.svg"]).pipe(svgo()).pipe(gulp.dest("build/img/logo"));
+const svgFolders = [
+  { src: "source/img/logo/*.svg", dest: "build/img/logo" },
+  { src: "source/img/favicons/*.svg", dest: "build/img/favicons" },
+];
+
+const svg = (done) => {
+  svgFolders.forEach((folder) => gulp.src(folder.src).pipe(svgo()).pipe(gulp.dest(folder.dest)));
+  done();
+};
 
 // Copy
 
