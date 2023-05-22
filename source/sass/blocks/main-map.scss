@@ -1,9 +1,5 @@
 .main__map-block {
-  padding-bottom: 15px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 0;
-  }
+  padding-bottom: 0;
 }
 
 .main__map-iframe {

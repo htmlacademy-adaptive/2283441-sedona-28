@@ -1,14 +1,18 @@
 .like__count {
   font-weight: 700;
   margin-left: 10px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .like__element {
   text-decoration: none;
   color: $black;
 
-  @media (min-width: $desktop-width) {
-    color: $white;
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
   }
 }
 

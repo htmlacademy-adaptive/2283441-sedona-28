@@ -11,9 +11,9 @@
 
 .input-text__input {
   font-family: $font;
-  width: 100%;
+  width: calc(100%);
   height: 58px;
-  border: none;
+  border: 4px solid transparent;
   padding: 16px;
   background-color: $gray;
   color: $black;
@@ -21,6 +21,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  outline: none;
 }
 
 .input-text__input::placeholder {

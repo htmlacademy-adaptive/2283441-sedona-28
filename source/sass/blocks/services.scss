@@ -1,14 +1,17 @@
 .services__list {
   text-align: start;
   margin: 0;
-  padding: 35px 20px;
+  padding: 23px 5px 25px 18px;
   display: flex;
-  align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     text-align: center;
     flex-direction: column;
-    align-items: center;
+    padding: 60px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 50px;
   }
 }
 
@@ -16,32 +19,41 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
-  padding: 8px 7px;
+  padding: 0;
+  margin: 10px 0 0 0;
 
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin: 0 0 15px 0;
   }
 }
 
 .list__text {
   font-size: 14px;
   line-height: 21px;
-  margin: 0;
-  padding: 8px 7px;
+  margin: 7px 0 0 0;
+  padding: 0;
 }
 
 .list-icon {
+  @media (max-width: $mobile-width) {
+    margin: 10px 0 0 0;
+  }
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
   }
 }
 
 .list-icon--house {
   display: inline-block;
-  width: 40px;
-  height: 37px;
+  width: 39px;
+  height: 36px;
 
   @media (min-width: $tablet-width) {
     height: 72px;
@@ -83,5 +95,11 @@
   @media (min-width: $desktop-width) {
     height: 75px;
     width: 77.4px;
+  }
+}
+
+.list__block {
+  @media (max-width: $mobile-width) {
+    padding-left: 7px;
   }
 }
