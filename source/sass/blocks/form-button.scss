@@ -1,10 +1,12 @@
 .button__control {
+  font-family: $font;
   border: none;
   background-color: $blue;
   color: $white;
   padding: 15px 50px;
-  font-size: 14px;
-  line-height: 21px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   text-transform: uppercase;
 
   @media (max-width: $mobile-width) {
@@ -14,6 +16,13 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 0;
+    padding: 15px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 95px;
+    top: -8px;
+    padding: 15px 100px;
   }
 }
 
@@ -22,10 +31,19 @@
   line-height: 21px;
   text-align: end;
 
+  @media (max-width: $mobile-width) {
+    margin: 7px 0 0 0;
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
     top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 100px;
+    top: 0;
   }
 }
 

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: -6px;
+    padding: 22px 10px 15px 10px;
 
     &--grey {
       background-color: #eaeaea;
@@ -16,40 +17,38 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding: 30px 10px 15px 10px;
   }
 }
 
 .picture__sign {
   text-align: left;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  @media (max-width: $mobile-width) {
+    padding: 15px 0 11px 0;
   }
 }
 
 .picture__like {
   text-align: left;
   display: flex;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 20px;
-    padding-top: 45px;
-    padding-bottom: 10px;
-  }
 }
 
 .picture__description {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 26px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 4px;
+  }
 }
 
 .picture__name {
   font-size: 14px;
   line-height: 21px;
   text-transform: none;
+  margin: 0;
 }
 
 .scenery__cover {

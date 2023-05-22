@@ -37,28 +37,52 @@
 
 .form__fieldset {
   @media (max-width: $mobile-width) {
-    margin-bottom: 60px;
+    padding-bottom: 45px;
+  }
+}
+
+.form__fieldset--radio {
+  @media (max-width: $mobile-width) {
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 30px;
+  }
+}
+
+.form__fieldset--checkbox {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.form__fieldset--textarea {
+  @media (max-width: $mobile-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
   }
 }
 
 .form {
   width: 100%;
-  padding-bottom: 60px;
-}
+  padding-bottom: 35px;
 
-.fieldset--block {
   @media (min-width: $tablet-width) {
-    width: 80%;
+    padding-bottom: 100px;
   }
 }
 
 .form__block {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     justify-items: center;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 
