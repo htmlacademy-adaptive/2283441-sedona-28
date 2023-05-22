@@ -41,6 +41,20 @@
   height: 58px;
 }
 
+.main__preview-text {
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+.main__preview-logo-text {
+  @media (min-width: $tablet-width) {
+    height: 78px;
+    width: 456px;
+  }
+}
+
 .main__preview-logo {
   position: relative;
   background-image: url("../img/logo/background-preview.png");
