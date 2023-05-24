@@ -19,6 +19,7 @@
 }
 
 .input-info__label {
+  color: $blackText;
   font-size: 14px;
   line-height: 21px;
   padding-left: 10px;
@@ -38,17 +39,9 @@
   background-color: #e6e6e6;
   top: 0;
   right: 0;
-
-  @media (max-width: $mobile-width) {
-    right: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    right: 0;
-  }
 }
 
-.input-info__wrapper::placeholder {
+.input-info__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
