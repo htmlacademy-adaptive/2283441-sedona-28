@@ -25,3 +25,7 @@
   background-color: $white;
   border: 4px solid #e5e5e5;
 }
+
+.textarea__textarea::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}

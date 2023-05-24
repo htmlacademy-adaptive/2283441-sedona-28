@@ -20,12 +20,13 @@
 @import "./blocks/main.scss";
 @import "./blocks/picture.scss";
 @import "./blocks/form.scss";
+@import "./blocks/fieldset.scss";
 @import "./blocks/text.scss";
 @import "./blocks/info.scss";
 @import "./blocks/radio.scss";
 @import "./blocks/checkbox.scss";
 @import "./blocks/textarea.scss";
-@import "./blocks/form-button.scss";
+@import "./blocks/button.scss";
 @import "./blocks/main-map.scss";
 @import "./blocks/video.scss";
 @import "./blocks/overlay.scss";
@@ -33,3 +34,4 @@
 //стили для подвала
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
+@import "./blocks/copyright.scss";

@@ -3,7 +3,7 @@
 //приветствие
 .main__preview {
   position: relative;
-  background-image: url("../img/logo/background-index.png");
+  background-image: url("../img/logo/background-index.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -15,16 +15,16 @@
   justify-content: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/logo/background-index2x.png");
+    background-image: url("../img/logo/background-index2x.webp");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/logo/background-index-desktop.png");
+    background-image: url("../img/logo/background-index-desktop.webp");
     min-height: 518px;
     background-position: top;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/logo/background-index-desktop2x.png");
+      background-image: url("../img/logo/background-index-desktop2x.webp");
     }
   }
 }
@@ -57,7 +57,7 @@
 
 .main__preview-logo {
   position: relative;
-  background-image: url("../img/logo/background-preview.png");
+  background-image: url("../img/logo/background-preview.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -68,16 +68,16 @@
   justify-content: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/logo/background-preview2x.png");
+    background-image: url("../img/logo/background-preview2x.webp");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/logo/background-preview-tablet.png");
+    background-image: url("../img/logo/background-preview-tablet.webp");
     min-height: 290px;
     background-position: top;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/logo/background-preview-tablet2x.png");
+      background-image: url("../img/logo/background-preview-tablet2x.webp");
     }
   }
 }
@@ -164,6 +164,7 @@
 }
 
 .block__text {
+  color: $blackText;
   font-size: 14px;
   line-height: 21px;
   padding: 0;
