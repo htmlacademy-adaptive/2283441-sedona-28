@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: -6px;
-    padding: 22px 10px 15px 10px;
+    padding: 22px 17px 17px 17px;
 
     &--grey {
       background-color: #eaeaea;
@@ -17,7 +17,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 30px 10px 15px 10px;
+    padding: 30px 17px 14px 25px;
   }
 }
 
@@ -51,7 +51,7 @@
   margin: 0;
 }
 
-.scenery__cover {
+.picture__cover {
   display: flex;
   width: 100%;
   object-fit: cover;

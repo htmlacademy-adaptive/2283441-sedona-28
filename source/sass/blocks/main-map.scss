@@ -14,7 +14,7 @@
   }
 }
 
-.map-block__img {
+.main-map__block-img {
   display: none;
   position: relative;
   cursor: pointer;
@@ -24,7 +24,7 @@
   }
 }
 
-.map-block__img::before {
+.main-map__block-img::before {
   content: "";
   position: absolute;
   width: 27px;
@@ -36,7 +36,7 @@
   transform: translate(-50%);
 }
 
-.map-block__img::after {
+.main-map__block-img::after {
   content: "";
   position: absolute;
   width: 17px;
