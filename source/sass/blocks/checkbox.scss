@@ -1,11 +1,3 @@
-.checkbox__text {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-  margin-left: 60px;
-}
-
 .checkbox {
   cursor: pointer;
   display: flex;
@@ -13,6 +5,14 @@
   position: relative;
   margin-bottom: 10px;
   height: 46px;
+}
+
+.checkbox__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  margin-left: 60px;
 }
 
 .checkbox__input {

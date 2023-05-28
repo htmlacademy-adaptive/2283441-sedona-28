@@ -17,9 +17,9 @@
         <a class="header__logo" href="index.html">
           <img class="header__logo-image" src="./img/logo/logo.svg" width="185" height="95" alt="Логотип Седона." />
         </a>
-        <nav class="header__nav header__nav--closed header__nav--nojs nav">
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="nav__list site-list">
+        <nav class="header-nav header-nav--closed header-nav--nojs">
+          <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="header-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html"> Главная </a>
             </li>
@@ -37,22 +37,20 @@
       </header>
 
       <main class="main">
-        <div class="main__preview-logo">
-          <img class="main__preview-logo-text" src="./img/logo/text-preview.svg" width="230" height="40" alt="Седона." />
-          <div class="main__preview-triangle">
+        <div class="main-preview main-preview--logo">
+          <img class="main-preview__logo-text" src="./img/logo/text-preview.svg" width="230" height="40" alt="Седона." />
+          <div class="main-preview__triangle">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo/background-index-desktop.svg" />
               <source media="(min-width: 768px)" srcset="./img/logo/background-index-tablet.svg" />
-              <img class="main__preview-triangle-size" src="./img/logo/background-index.svg" width="320" height="57" alt="Декоративный элемент." />
+              <img class="main-preview__triangle-size" src="./img/logo/background-index.svg" width="320" height="57" alt="Декоративный элемент." />
             </picture>
           </div>
         </div>
         <div class="main__concontainer-form">
-          <div class="main__block main__block--form block">
-            <h2 class="block__title block__title--form block__title--big">Оставьте свой отзыв</h2>
-            <p class="block__text block__text--form">
-              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-            </p>
+          <div class="main-form">
+            <h2 class="main-form__title block__title--big">Оставьте свой отзыв</h2>
+            <p class="main-form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
 
           <form class="form" method="post" action="https://echo.htmlacademy.ru/courses">

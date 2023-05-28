@@ -1,8 +1,9 @@
-.main__map-block {
-  padding-bottom: 0;
+.main-map__img {
+  display: block;
+  width: 100%;
 }
 
-.main__map-iframe {
+.main-map__iframe {
   width: 100%;
   display: block;
   height: 350px;
@@ -21,11 +22,6 @@
   &--no-js {
     display: block;
   }
-}
-
-.main__map-img {
-  display: block;
-  width: 100%;
 }
 
 .map-block__img::before {
