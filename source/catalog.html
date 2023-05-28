@@ -17,9 +17,9 @@
         <a class="header__logo" href="index.html">
           <img class="header__logo-image" src="./img/logo/logo.svg" width="185" height="95" alt="Логотип Седона." />
         </a>
-        <nav class="header__nav header__nav--closed header__nav--nojs nav">
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="nav__list site-list">
+        <nav class="header-nav header-nav--closed header-nav--nojs">
+          <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="header-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html"> Главная </a>
             </li>
@@ -37,19 +37,19 @@
       </header>
 
       <main class="main">
-        <div class="main__preview-logo">
-          <img class="main__preview-logo-text" src="./img/logo/text-preview.svg" width="230" height="40" alt="Седона." />
-          <div class="main__preview-triangle">
+        <div class="main-preview main-preview--logo">
+          <img class="main-preview__logo-text" src="./img/logo/text-preview.svg" width="230" height="40" alt="Седона." />
+          <div class="main-preview__triangle">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo/background-index-desktop.svg" />
               <source media="(min-width: 768px)" srcset="./img/logo/background-index-tablet.svg" />
-              <img class="main__preview-triangle-size" src="./img/logo/background-index.svg" width="320" height="57" alt="Декоративный элемент." />
+              <img class="main-preview__triangle-size" src="./img/logo/background-index.svg" width="320" height="57" alt="Декоративный элемент." />
             </picture>
           </div>
         </div>
-        <div class="main__block block">
-          <h2 class="block__title block__title--catalog block__title--big">Фото и видео</h2>
-          <p class="block__text block__text--catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="main-catalog">
+          <h2 class="main-catalog__title main-catalog__title--big">Фото и видео</h2>
+          <p class="main-catalog__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
 
         <div class="main__concontainer">
@@ -246,9 +246,11 @@
             </article>
           </section>
 
-          <div class="main__block main__block--line block">
-            <h2 class="block__title block__title--catalog-epilogue block__title--big">Все еще сомневаетесь?</h2>
-            <p class="block__text block__text--catalog-epilogue">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="main-catalog main-catalog--epilogue main__block--line block">
+            <h2 class="main-catalog__title main-catalog__title--epilogue main-catalog__title--big">Все еще сомневаетесь?</h2>
+            <p class="main-catalog__text main-catalog__text--epilogue">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </p>
             <a class="block-video video" href="https://www.youtube.com/watch?v=z5MB53EuRyE" target="_blank">
               <div class="video__preview">
                 <picture>

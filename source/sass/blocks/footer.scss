@@ -21,6 +21,10 @@
     justify-items: center;
     gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 20px 0;
+  }
 }
 
 .footer__copyright {

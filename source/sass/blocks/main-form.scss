@@ -1,0 +1,38 @@
+.main-form {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.main-form__title {
+  @media (max-width: $mobile-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+
+.main-form__text {
+  color: $blackText;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}

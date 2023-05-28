@@ -10,9 +10,13 @@
 @import "./blocks/site-list.scss";
 
 // стили для main
-@import "./blocks/overall.scss";
+@import "./blocks/main-preview.scss";
+@import "./blocks/main-index.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/main-form.scss";
+@import "./blocks/main-finds.scss";
 @import "./blocks/advantages.scss";
-@import "./blocks/services.scss";
+@import "./blocks/services-list.scss";
 @import "./blocks/advantages-img.scss";
 @import "./blocks/causes-advantages.scss";
 @import "./blocks/photo.scss";
@@ -21,8 +25,8 @@
 @import "./blocks/picture.scss";
 @import "./blocks/form.scss";
 @import "./blocks/fieldset.scss";
-@import "./blocks/text.scss";
-@import "./blocks/info.scss";
+@import "./blocks/input-text.scss";
+@import "./blocks/input-info.scss";
 @import "./blocks/radio.scss";
 @import "./blocks/checkbox.scss";
 @import "./blocks/textarea.scss";

@@ -1,26 +1,31 @@
 .advantages__article {
   margin: 0;
-  padding: 0;
+  padding: 33px 18px 40px 18px;
   display: flex;
   flex-direction: column;
+  color: $blackText;
 
   @media (max-width: $mobile-width) {
-    min-height: 211px;
-  }
-
-  &--bg-blue {
-    background-color: $blue;
-    color: $white;
+    min-height: 221px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 55px 33px 31px 33px;
     max-width: 256px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 52px 50px 51px;
     max-width: 400px;
+  }
+}
+
+.advantages__article.advantages__article--bg-blue {
+  background-color: $blue;
+  color: $white;
+
+  .advantages__title {
+    color: $white;
   }
 }
 
@@ -45,40 +50,59 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
+  margin: 16px 0 13px 0;
   padding: 0;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    margin: 0;
+    margin: 0 20px 10px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 75px 10px;
   }
 }
 
 .advantages__title--mobail {
   @media (max-width: $mobile-width) {
-    margin: 0;
+    margin: 10px;
+  }
+}
+
+.advantages__benefits-number {
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px 0;
   }
 }
 
 .advantages__text {
-  color: $blackText;
   font-size: 14px;
   line-height: 21px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 12px;
+  }
 }
 
-.advantages__benefits-number {
-  color: $blackText;
-  margin: 0;
-  padding: 0;
+.advantages__text--two {
+  @media (min-width: $desktop-width) {
+    margin: 0 33px;
+  }
+}
 
+.advantages__text--four {
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 33px 0 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 10px 0 10px;
   }
 }
 
@@ -89,6 +113,8 @@
 }
 
 .advantages__block {
+  color: $blackText;
+
   @media (min-width: $tablet-width) {
     display: flex;
     width: 100%;
@@ -106,18 +132,18 @@
 
 .advantages__block--bg-grey {
   background-color: $gray;
-  padding: 0;
+  padding: 1px 18px 28px 18px;
   min-height: 165px;
 
   @media (min-width: $tablet-width) {
     min-height: 256px;
-    padding: 0;
+    padding: 41px 33px 47px 20px;
     display: flex;
     flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 50px 52px;
   }
 }
 

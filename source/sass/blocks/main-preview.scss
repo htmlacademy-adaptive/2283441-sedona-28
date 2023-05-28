@@ -1,0 +1,86 @@
+//приветствие
+.main-preview {
+  position: relative;
+  background-image: url("../img/logo/background-index.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 6px;
+  background-size: cover;
+  background-color: $blue;
+  min-height: 389px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/logo/background-index2x.webp");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/logo/background-index-desktop.webp");
+    min-height: 518px;
+    background-position: top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/logo/background-index-desktop2x.webp");
+    }
+  }
+}
+
+.main-preview__triangle {
+  position: absolute;
+  width: 100%;
+  height: 58px;
+  bottom: -1px;
+}
+
+.main-preview__triangle-size {
+  width: 100%;
+}
+
+.main-preview__text {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -14px;
+    width: 461px;
+    height: 350px;
+  }
+}
+
+.main-preview__logo-text {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    height: 78px;
+    width: 456px;
+  }
+}
+
+.main-preview--logo {
+  position: relative;
+  background-image: url("../img/logo/background-preview.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: $blue;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/logo/background-preview2x.webp");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/logo/background-preview-tablet.webp");
+    min-height: 290px;
+    background-position: top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/logo/background-preview-tablet2x.webp");
+    }
+  }
+}
