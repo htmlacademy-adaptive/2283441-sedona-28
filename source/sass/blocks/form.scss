@@ -1,40 +1,60 @@
 .form {
-  padding-bottom: 0;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
   }
 }
 
-.form__fieldset {
-  @media (max-width: $mobile-width) {
-    padding-bottom: 0;
+.form__fieldset-text {
+  padding: 0 0 55px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.form__fieldset--info {
+  padding: 0 0 45px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
 .form__fieldset--radio {
-  @media (max-width: $mobile-width) {
-    padding-bottom: 0;
+  padding: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 20px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 0;
+    padding: 0 0 27px 0;
   }
 }
 
 .form__fieldset--checkbox {
+  padding: 0 0 27px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-bottom: 0;
+    padding: 0 0 40px 0;
   }
 }
 
 .form__fieldset--textarea {
-  @media (max-width: $mobile-width) {
-    padding-bottom: 0;
-  }
+  padding: 0 0 45px 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding: 0 0 40px 0;
   }
 }
 
@@ -42,9 +62,16 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    justify-items: center;
+    justify-items: stretch;
+    gap: 58px;
     position: relative;
-    margin-bottom: 40px;
+    margin: 0;
+    padding: 0 0 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 60px 0;
+    gap: 100px;
   }
 }
 

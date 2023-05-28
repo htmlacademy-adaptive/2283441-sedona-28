@@ -3,6 +3,7 @@
 @import "./base/fonts.scss";
 @import "./base/base.scss";
 @import "./base/utils.scss";
+@import "./blocks/container.scss";
 
 // стили для шапки
 @import "./blocks/header-nav.scss";
@@ -16,6 +17,7 @@
 @import "./blocks/main-form.scss";
 @import "./blocks/main-finds.scss";
 @import "./blocks/advantages.scss";
+@import "./blocks/services.scss";
 @import "./blocks/services-list.scss";
 @import "./blocks/advantages-img.scss";
 @import "./blocks/causes-advantages.scss";
@@ -34,6 +36,7 @@
 @import "./blocks/main-map.scss";
 @import "./blocks/video.scss";
 @import "./blocks/overlay.scss";
+@import "./blocks/modal-window.scss";
 
 //стили для подвала
 @import "./blocks/footer.scss";

@@ -16,12 +16,12 @@ navToggle.addEventListener("click", function () {
 });
 
 const activateMap = () => {
-  const image = document.querySelector(".map-block__img");
+  const image = document.querySelector(".main-map__block-img");
   const iframe = document.querySelector(".main-map__iframe");
 
   if (image && iframe) {
     iframe.classList.remove("main-map__iframe--no-js");
-    image.classList.remove("map-block__img--no-js");
+    image.classList.remove("main-map__block-img--no-js");
   }
 };
 

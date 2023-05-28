@@ -1,4 +1,4 @@
-.main__photo {
+.photo {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -15,17 +15,17 @@
     position: relative;
     margin-bottom: 45px;
 
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   height: 1px;
-    //   width: 100vw;
-    //   top: -25px;
-    //   left: -20px;
-    //   right: 0;
-    //   bottom: 0;
-    //   background-color: #e5e5e5;
-    // }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100vw;
+      top: -25px;
+      left: -20px;
+      right: 0;
+      bottom: 0;
+      background-color: #e5e5e5;
+    }
   }
 
   @media (min-width: $desktop-width) {
