@@ -1,6 +1,8 @@
 .like__count {
   font-weight: 700;
-  margin-left: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 8px;
 
   @media (min-width: $desktop-width) {
     color: $white;

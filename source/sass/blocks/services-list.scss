@@ -11,9 +11,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 22px 0 33px;
+    padding: 69px 33px 69px 33px;
   }
 }
+
 
 .services-list__title {
   font-weight: 700;
@@ -25,7 +26,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    margin: 0 0 25px 0;
+    margin: 0 40px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 122px 22px;
   }
 }
 
@@ -41,7 +46,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 33px;
+    margin: 0 39px 0 46px;
+  }
+}
+
+.services-list__text--food {
+  @media (min-width: $tablet-width) {
+    margin: 0 18px 0 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -49,13 +64,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
-  }
-}
-
-.services-list__block--house {
-  @media (min-width: $desktop-width) {
-    margin-left: -55px;
+    margin-bottom: 12px;
   }
 }
 
@@ -73,7 +82,6 @@
   @media (min-width: $desktop-width) {
     height: 72.4px;
     width: 79.4px;
-    margin-right: 55px;
   }
 }
 
@@ -95,7 +103,7 @@
 
 .services-list__block--souvenir {
   @media (min-width: $desktop-width) {
-    margin-right: -69px;
+    margin: 0;
   }
 }
 
@@ -114,7 +122,6 @@
   @media (min-width: $desktop-width) {
     height: 75px;
     width: 77.4px;
-    margin-left: 60px;
     margin-bottom: 8px;
   }
 }

@@ -1,29 +1,29 @@
 //приветствие
 .main-preview {
   position: relative;
-  background-image: url("../img/logo/background-index.webp");
+  background-image: url("../img/logo/background-index.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   top: 6px;
   background-size: cover;
   background-color: $blue;
-  min-height: 389px;
+  min-height: 391px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/logo/background-index2x.webp");
+    background-image: url("../img/logo/background-index2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/logo/background-index-desktop.webp");
+    background-image: url("../img/logo/background-index-desctop.jpg");
     min-height: 518px;
     background-position: top;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/logo/background-index-desktop2x.webp");
+      background-image: url("../img/logo/background-index-desctop2x.jpg");
     }
   }
 }
@@ -59,14 +59,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-left: -4px;
   }
 }
 
 .main-preview--logo {
   position: relative;
-  background-image: url("../img/logo/background-preview.webp");
+  background-image: url("../img/logo/background-preview.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -77,16 +77,20 @@
   justify-content: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/logo/background-preview2x.webp");
+    background-image: url("../img/logo/background-preview2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/logo/background-preview-tablet.webp");
+    background-image: url("../img/logo/background-preview-tablet.jpg");
     min-height: 290px;
     background-position: top;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/logo/background-preview-tablet2x.webp");
+      background-image: url("../img/logo/background-preview-tablet2x.jpg");
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 300px;
   }
 }
