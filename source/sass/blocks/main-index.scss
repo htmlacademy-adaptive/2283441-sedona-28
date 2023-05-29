@@ -1,6 +1,6 @@
 .main-index {
   max-width: 269px;
-  padding: 41px 0 16px 0;
+  padding: 33px 0 10px 0;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -18,7 +18,7 @@
   font-size: 18px;
   line-height: 26px;
   padding: 0;
-  margin: 0 0 35px 0;
+  margin: 6px 0 35px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -36,7 +36,7 @@
 
 .main-index--epilogue {
   @media (max-width: $mobile-width) {
-    padding: 0 0 50px;
+    padding: 10px 0 50px;
   }
 
   @media (min-width: $tablet-width) {

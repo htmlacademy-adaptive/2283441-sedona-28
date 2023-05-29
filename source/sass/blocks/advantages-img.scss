@@ -9,3 +9,9 @@
     height: 267px;
   }
 }
+
+.advantages-img--img {
+  @media (max-width: $mobile-width) {
+    height: 260px;
+  }
+}

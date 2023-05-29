@@ -3,8 +3,16 @@
   display: flex;
   align-items: flex-end;
   position: relative;
-  margin: -10px 0 25px;
-  height: 46px;
+  margin: -10px 0 3px;
+  height: 50px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -8px 0 3px 17px;
+  }
 }
 
 .checkbox__text {
